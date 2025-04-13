@@ -1,0 +1,215 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold text-blue-800">
+      Football League Simulation Tutorial
+    </h1>
+    <div>
+      <button
+        pButton
+        label="Back to Simulation"
+        icon="pi pi-arrow-left"
+        routerLink="/"
+        class="p-button-secondary"
+      ></button>
+    </div>
+  </div>
+  <p-card styleClass="mb-6">
+    <div class="prose max-w-none">
+      <p class="text-lg">
+        Welcome to the Football League Simulation tutorial! This guide will walk
+        you through how to use the application to create and manage your own
+        football league.
+      </p>
+    </div>
+  </p-card>
+  <p-accordion [value]="['0']" [multiple]="true" styleClass="mb-6">
+    <p-accordion-panel value="0">
+      <p-accordion-header> Getting Started</p-accordion-header>
+      <p-accordion-content>
+        <h3 class="text-xl font-semibold text-blue-700">
+          Setting Up Your League
+        </h3>
+        <p>
+          When you first open the application, you'll see the team selection
+          screen. Here you can:
+        </p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Add teams (up to 20) using the "Add Team" button</li>
+          <li>Remove teams using the trash icon (minimum 2 teams required)</li>
+          <li>Customize team names by typing in the input fields</li>
+          <li>
+            Adjust team strengths using the sliders (higher strength = better
+            performance)
+          </li>
+        </ul>
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 mb-4">
+          <p class="font-semibold text-blue-800">Pro Tip:</p>
+          <p>
+            Team strength significantly affects match outcomes. A team with 100
+            strength will generally perform better than a team with 50 strength.
+          </p>
+        </div>
+
+        <p>
+          Once you're happy with your teams, click the "Start League" button to
+          begin the simulation.
+        </p>
+      </p-accordion-content>
+    </p-accordion-panel>
+    <p-accordion-panel value="1">
+      <p-accordion-header> Playing the League </p-accordion-header>
+      <p-accordion-content>
+        <h3 class="text-xl font-semibold text-blue-700">
+          Navigating the League Interface
+        </h3>
+        <p>
+          After starting the league, you'll see the main simulation interface
+          with several sections:
+        </p>
+
+        <h4 class="text-lg font-semibold text-blue-600 mt-4">
+          League Controls
+        </h4>
+        <p>
+          On the right side, you'll find the control panel with these options:
+        </p>
+        <ul class="list-disc pl-6 mb-4">
+          <li><strong>Next Week:</strong> Play the next round of matches</li>
+          <li>
+            <strong>Play Entire League:</strong> Automatically play all
+            remaining matches
+          </li>
+          <li><strong>Reset League:</strong> Start over with team selection</li>
+        </ul>
+        <h4 class="text-lg font-semibold text-blue-600 mt-4">
+          League Standings
+        </h4>
+        <p>The standings table shows:</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Team positions based on points</li>
+          <li>Match statistics (played, won, drawn, lost)</li>
+          <li>Goal information (goals for, against, difference)</li>
+          <li>Total points</li>
+        </ul>
+        <p>
+          Teams with no chance of winning the championship will be highlighted
+          in red.
+        </p>
+
+        <h4 class="text-lg font-semibold text-blue-600 mt-4">
+          Current Week Matches
+        </h4>
+        <p>
+          Below the standings, you'll see the current week's matches with
+          results after they're played.
+        </p>
+        <h4 class="text-lg font-semibold text-blue-600 mt-4">Match History</h4>
+        <p>
+          As the league progresses, you'll see an accordion of past weeks and
+          their results.
+        </p>
+        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200 mt-4">
+          <p class="font-semibold text-yellow-800">Note:</p>
+          <p>
+            After the 4th week, championship probabilities will appear on the
+            right side of the screen.
+          </p>
+        </div>
+      </p-accordion-content>
+    </p-accordion-panel>
+    <p-accordion-panel value="2">
+      <p-accordion-header> Editing Match Results </p-accordion-header>
+      <p-accordion-content>
+        <h3 class="text-xl font-semibold text-blue-700">
+          Customizing Match Outcomes
+        </h3>
+        <p>
+          You can edit the results of matches that have already been played:
+        </p>
+        <ol class="list-decimal pl-6 mb-4">
+          <li>
+            Find the match you want to edit in the current week or match history
+          </li>
+          <li>Click the pencil icon next to the match</li>
+          <li>In the dialog that appears, adjust the goals for each team</li>
+          <li>Click "Save" to update the result</li>
+        </ol>
+
+        <p>
+          After editing a match result, the league standings will automatically
+          recalculate to reflect the changes. This includes updating points,
+          goal differences, and championship probabilities.
+        </p>
+
+        <div class="bg-green-50 p-4 rounded-lg border border-green-200 mt-4">
+          <p class="font-semibold text-green-800">Pro Tip:</p>
+          <p>
+            Use this feature to create "what if" scenarios or correct any
+            results you feel were unfair!
+          </p>
+        </div>
+      </p-accordion-content>
+    </p-accordion-panel>
+    <p-accordion-panel>
+      <p-accordion-header> League Rules </p-accordion-header>
+      <p-accordion-content>
+        <h3 class="text-xl font-semibold text-blue-700">
+          Understanding the League System
+        </h3>
+        <p>The league follows standard football rules:</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>
+            <strong>Points System:</strong>
+            <ul class="list-disc pl-6 mb-2">
+              <li>Win: 3 points</li>
+              <li>Draw: 1 point</li>
+              <li>Loss: 0 points</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Standings Tiebreakers:</strong>
+            <ol class="list-decimal pl-6 mb-2">
+              <li>Total points</li>
+              <li>Goal difference (goals scored minus goals conceded)</li>
+              <li>Goals scored</li>
+              <li>Alphabetical order of team names</li>
+            </ol>
+          </li>
+          <li>
+            <strong>Fixture Generation:</strong> Each team plays against every
+            other team twice (home and away)
+          </li>
+        </ul>
+
+        <h4 class="text-lg font-semibold text-blue-600 mt-4">
+          Championship Determination
+        </h4>
+        <p>
+          The team with the most points at the end of all matches is declared
+          the champion. After the 4th week, the system will calculate and
+          display championship probabilities for each team based on their
+          current performance and remaining matches.
+        </p>
+        <div class="bg-purple-50 p-4 rounded-lg border border-purple-200 mt-4">
+          <p class="font-semibold text-purple-800">
+            Note on Championship Probabilities:
+          </p>
+          <p>
+            These probabilities are calculated based on current standings, team
+            strengths, and remaining matches. They're updated after each match
+            and when results are edited.
+          </p>
+        </div>
+      </p-accordion-content>
+    </p-accordion-panel>
+  </p-accordion>
+  <div class="flex justify-center mt-8">
+    <button
+      pButton
+      label="View Features"
+      icon="pi pi-list"
+      routerLink="/features"
+      class="p-button-lg"
+    ></button>
+  </div>
+</div>

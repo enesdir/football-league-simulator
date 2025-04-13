@@ -1,0 +1,111 @@
+<div class="grid">
+  <div class="col-span-12">
+    <p-card>
+      <div class="text-center mb-6">
+        <h1 class="text-4xl font-bold text-blue-800 mb-2">
+          Welcome to Football League Simulation
+        </h1>
+        <p class="text-xl text-gray-600">
+          Create, manage, and simulate your own football league
+        </p>
+      </div>
+      <div class="grid">
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-4">
+          <div
+            class="h-full flex flex-col bg-blue-50 p-4 rounded-lg border border-blue-200 justify-between"
+          >
+            <div class="flex gap-2">
+              <i
+                class="pi pi-users text-blue-600"
+                style="font-size: 1.5rem"
+              ></i>
+
+              <h2 class="text-xl font-bold text-blue-800 mb-2 text-center">
+                Create Teams
+              </h2>
+            </div>
+            <p class="text-gray-700 mb-4 flex-grow-1">
+              Add up to 20 teams with custom names and strengths to build your
+              perfect league.
+            </p>
+            <button
+              pButton
+              label="Start Simulation"
+              icon="pi pi-play"
+              routerLink="/simulation"
+              class="p-button-sm p-button-outlined"
+            ></button>
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-4">
+          <div
+            class="h-full flex flex-col bg-green-50 p-4 rounded-lg border border-green-200"
+          >
+            <div class="flex gap-2">
+              <i
+                class="pi pi-chart-bar text-green-600"
+                style="font-size: 1.5rem"
+              ></i>
+              <h2 class="text-xl font-bold text-green-800 mb-2 text-center">
+                Track Results
+              </h2>
+            </div>
+
+            <p class="text-gray-700 mb-4 flex-grow-1">
+              Follow match results, league standings, and championship
+              probabilities in real-time.
+            </p>
+            <button
+              pButton
+              label="Learn How"
+              icon="pi pi-book"
+              routerLink="/tutorial"
+              class="p-button-sm p-button-outlined p-button-success"
+            ></button>
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 mb-4">
+          <div
+            class="h-full flex flex-col bg-purple-50 p-4 rounded-lg border border-purple-200"
+          >
+            <div class="flex gap-2">
+              <i
+                class="pi pi-cog text-purple-600"
+                style="font-size: 1.5rem"
+              ></i>
+              <h2 class="text-xl font-bold text-purple-800 mb-2 text-center">
+                Customize
+              </h2>
+            </div>
+            <p class="text-gray-700 mb-4 flex-grow-1">
+              Edit match results, adjust team strengths, and create your own
+              "what if" scenarios.
+            </p>
+            <button
+              pButton
+              label="See Features"
+              icon="pi pi-list"
+              routerLink="/features"
+              class="p-button-sm p-button-outlined p-button-help"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <p-divider></p-divider>
+      <div class="text-center mt-6">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4">
+          Ready to get started?
+        </h2>
+        <button
+          pButton
+          label="Start Simulation"
+          icon="pi pi-play"
+          routerLink="/simulation"
+          class="p-button-lg"
+        ></button>
+      </div>
+    </p-card>
+  </div>
+</div>

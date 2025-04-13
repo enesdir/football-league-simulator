@@ -1,0 +1,25 @@
+<p-card header="Championship Probabilities">
+  <div class="flex flex-col gap-2">
+    <div class="flex justify-between font-bold">
+      <span>Team</span>
+      <span>Probability</span>
+    </div>
+    <div class="flex flex-col gap-3">
+      <div *ngFor="let team of teams" class="flex flex-col gap-1">
+        <div class="flex justify-between items-center">
+          <span>{{ team.name }}</span>
+          <span>{{ team.championshipProbability }}%</span>
+        </div>
+        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+          <div
+            class="h-full bg-blue-500 transition-all duration-500"
+            [ngClass]="team.noChance ? 'bg-red-500' : ''"
+            [style.width.%]="team.championshipProbability"
+            role="progressbar"
+            [attr.aria-valuenow]="team.championshipProbability"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</p-card>

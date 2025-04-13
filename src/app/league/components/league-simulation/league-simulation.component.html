@@ -1,0 +1,32 @@
+<app-team-selection
+  *ngIf="!leagueStarted"
+  (startLeague)="startLeague($event)"
+/>
+<div class="space-y-2 w-full" *ngIf="leagueStarted">
+  <app-league-controls (resetLeague)="resetLeague()" />
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 w-full">
+    <p-card
+      header="Football League Simulation"
+      class="lg:col-span-6 text-center"
+      [ngClass]="{
+        'lg:col-span-9 md:col-span-8': (currentWeek$ | async)! < 4,
+      }"
+    >
+      <app-standings
+        [teams]="(teams$ | async) ?? []"
+        [showChampionshipProbability]="(currentWeek$ | async)! >= 4"
+      />
+    </p-card>
+    <div class="lg:col-span-3">
+      <app-matches
+        [matches]="(currentWeekMatches$ | async) ?? []"
+        (matchUpdated)="onMatchUpdated($event)"
+      />
+    </div>
+    <div *ngIf="(currentWeek$ | async)! >= 4" class="lg:col-span-3">
+      <app-championship-probability [teams]="(teams$ | async) ?? []" />
+    </div>
+  </div>
+  <app-match-history *ngIf="(currentWeek$ | async)! > 0" />
+</div>
+<p-toast position="bottom-right" key="br" />

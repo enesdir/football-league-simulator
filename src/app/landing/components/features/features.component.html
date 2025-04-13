@@ -1,0 +1,224 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold text-blue-800">
+      Football League Simulation Features
+    </h1>
+    <div>
+      <button
+        pButton
+        label="Back to Simulation"
+        icon="pi pi-arrow-left"
+        routerLink="/"
+        class="p-button-secondary mr-2"
+      ></button>
+      <button
+        pButton
+        label="View Tutorial"
+        icon="pi pi-book"
+        routerLink="/tutorial"
+        class="p-button-info"
+      ></button>
+    </div>
+  </div>
+  <p-card styleClass="mb-6">
+    <div class="max-w-none">
+      <p class="text-lg">
+        The Football League Simulation offers a comprehensive set of features to
+        create and manage your own football league. Here's a detailed overview
+        of what you can do with this application.
+      </p>
+    </div>
+  </p-card>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <p-card
+      header="Team Management"
+      subheader="Customize your league teams"
+      styleClass="h-full"
+    >
+      <div class="max-w-none">
+        <ul class="list-disc pl-6">
+          <li>Add up to 20 teams to your league</li>
+          <li>Remove teams (minimum 2 required)</li>
+          <li>Customize team names</li>
+          <li>Adjust team strengths (50-100) to affect match outcomes</li>
+          <li>Reset to default teams</li>
+        </ul>
+      </div>
+    </p-card>
+    <p-card
+      header="League Simulation"
+      subheader="Play through your custom league"
+      styleClass="h-full"
+    >
+      <div class="max-w-none">
+        <ul class="list-disc pl-6">
+          <li>Automatically generated fixtures for all teams</li>
+          <li>Play week-by-week or simulate the entire league at once</li>
+          <li>
+            Match results based on team strengths with realistic randomization
+          </li>
+          <li>Home advantage factor for more realistic outcomes</li>
+          <li>Reset the league at any time</li>
+        </ul>
+      </div>
+    </p-card>
+    <p-card
+      header="Statistics & Standings"
+      subheader="Comprehensive league data"
+      styleClass="h-full"
+    >
+      <div class="max-w-none">
+        <ul class="list-disc pl-6">
+          <li>Real-time updated league table</li>
+          <li>Complete team statistics (played, won, drawn, lost)</li>
+          <li>Goal tracking (goals for, against, difference)</li>
+          <li>Points calculation based on standard football rules</li>
+          <li>Tiebreakers for teams with equal points</li>
+        </ul>
+      </div>
+    </p-card>
+    <p-card
+      header="Advanced Features"
+      subheader="Enhanced simulation capabilities"
+      styleClass="h-full"
+    >
+      <div class="max-w-none">
+        <ul class="list-disc pl-6">
+          <li>Championship probability calculations (after week 4)</li>
+          <li>Visual indication of teams with no championship chance</li>
+          <li>Editable match results with automatic recalculation</li>
+          <li>Match history with complete results by week</li>
+          <li>Support for both even and odd numbers of teams</li>
+        </ul>
+      </div>
+    </p-card>
+  </div>
+  <p-card header="Technical Features" styleClass="mb-6">
+    <div class="max-w-none">
+      <h3 class="text-xl font-semibold text-blue-700">
+        Built with Modern Technologies
+      </h3>
+      <p>
+        This application is built using the latest web development technologies:
+      </p>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-300 mb-4">
+          <thead>
+            <tr>
+              <th class="py-2 px-4 border-b text-left">Technology</th>
+              <th class="py-2 px-4 border-b text-left">Version</th>
+              <th class="py-2 px-4 border-b text-left">Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 px-4 border-b">Angular</td>
+              <td class="py-2 px-4 border-b">19</td>
+              <td class="py-2 px-4 border-b">
+                Frontend framework with standalone components
+              </td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">PrimeNG</td>
+              <td class="py-2 px-4 border-b">Latest</td>
+              <td class="py-2 px-4 border-b">UI component library</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Tailwind CSS</td>
+              <td class="py-2 px-4 border-b">Latest</td>
+              <td class="py-2 px-4 border-b">Utility-first CSS framework</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">RxJS</td>
+              <td class="py-2 px-4 border-b">Latest</td>
+              <td class="py-2 px-4 border-b">Reactive programming library</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3 class="text-xl font-semibold text-blue-700">
+        Architecture Highlights
+      </h3>
+      <ul class="list-disc pl-6">
+        <li>Modular design with standalone components</li>
+        <li>Reactive state management using RxJS</li>
+        <li>Responsive layout that works on all devices</li>
+        <li>Accessible UI with proper ARIA attributes</li>
+        <li>Optimized performance with change detection strategies</li>
+      </ul>
+    </div>
+  </p-card>
+  <p-card header="Future Enhancements" styleClass="mb-6">
+    <div class="max-w-none">
+      <p>
+        We're constantly working to improve the Football League Simulation. Here
+        are some features we're planning to add:
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <h4 class="text-lg font-semibold text-blue-700 mb-2">
+            Player Management
+          </h4>
+          <p>
+            Add individual players to teams with their own statistics and
+            abilities
+          </p>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <h4 class="text-lg font-semibold text-blue-700 mb-2">
+            Multiple Seasons
+          </h4>
+          <p>
+            Support for running multiple seasons with promotion and relegation
+          </p>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <h4 class="text-lg font-semibold text-blue-700 mb-2">
+            Cup Competitions
+          </h4>
+          <p>Add knockout tournaments alongside the league format</p>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <h4 class="text-lg font-semibold text-blue-700 mb-2">
+            Team Finances
+          </h4>
+          <p>Manage team budgets, transfers, and financial performance</p>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <h4 class="text-lg font-semibold text-blue-700 mb-2">Manager Mode</h4>
+          <p>Take control of a single team with tactical decisions</p>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+          <h4 class="text-lg font-semibold text-blue-700 mb-2">Data Export</h4>
+          <p>Export league data to CSV or JSON formats</p>
+        </div>
+      </div>
+      <div class="mt-6 bg-green-50 p-4 rounded-lg border border-green-200">
+        <h4 class="text-lg font-semibold text-green-700 mb-2">
+          Feedback Welcome!
+        </h4>
+        <p>
+          We're always looking for feedback and suggestions to improve the
+          simulation. If you have ideas for new features or improvements, please
+          let us know!
+        </p>
+      </div>
+    </div>
+  </p-card>
+  <div class="flex justify-center mt-8 space-x-4">
+    <button
+      pButton
+      label="Back to Simulation"
+      icon="pi pi-arrow-left"
+      routerLink="/"
+      class="p-button-lg p-button-secondary"
+    ></button>
+    <button
+      pButton
+      label="View Tutorial"
+      icon="pi pi-book"
+      routerLink="/tutorial"
+      class="p-button-lg p-button-info"
+    ></button>
+  </div>
+</div>
