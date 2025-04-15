@@ -3,7 +3,8 @@ import { BehaviorSubject, map, Observable } from 'rxjs';
 import { Team } from '../models/team.model';
 import { Match } from '../models/match.model';
 import { Week } from '../models/week.model';
-
+import { League } from '@/league/models/league.model';
+import { PREDEFINED_LEAGUES } from '../mocks/default-leagues';
 @Injectable({
   providedIn: 'root',
 })
@@ -18,6 +19,7 @@ export class LeagueService {
   currentWeek$ = this.currentWeekSubject.asObservable();
   isLeagueComplete$ = this.isLeagueCompleteSubject.asObservable();
 
+  private predefinedLeagues: League[] = PREDEFINED_LEAGUES;
   private defaultTeams: Team[] = [
     {
       id: 1,
@@ -72,7 +74,23 @@ export class LeagueService {
       hasChance: true,
     },
   ];
+  // Add these methods to the LeagueService class
+  getAvailableLeagues(): League[] {
+    return this.predefinedLeagues;
+  }
 
+  getLeagueById(leagueId: string): League | undefined {
+    return this.predefinedLeagues.find((league) => league.id === leagueId);
+  }
+
+  getTeamsForLeague(leagueId: string): Team[] {
+    const league = this.getLeagueById(leagueId);
+    if (league) {
+      // Return a deep copy of the teams to avoid modifying the original
+      return league.teams.map((team) => ({ ...team }));
+    }
+    return [];
+  }
   constructor() {}
 
   initializeLeague(teams?: Team[]): void {
@@ -545,5 +563,11 @@ export class LeagueService {
   getChampion(): Team | null {
     const teams = this.teamsSubject.value;
     return teams.length > 0 ? teams[0] : null;
+  }
+
+  // Add a method to get league name by ID
+  getLeagueName(leagueId: string): string {
+    const league = this.getLeagueById(leagueId);
+    return league ? league.name : 'Custom League';
   }
 }

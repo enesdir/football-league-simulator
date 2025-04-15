@@ -16,6 +16,7 @@ import { TeamSelectionComponent } from '../team-selection/team-selection.compone
 import { LeagueControlsComponent } from '../league-controls/league-controls.component';
 import { MatchHistoryComponent } from '../match-history/match-history.component';
 import { ChampionshipProbabilityComponent } from '../championship-probability/championship-probability.component';
+import { LeagueSelectionComponent } from '../league-selection/league-selection.component';
 
 @Component({
   selector: 'app-league-simulation',
@@ -26,6 +27,7 @@ import { ChampionshipProbabilityComponent } from '../championship-probability/ch
     ToastModule,
     StandingsComponent,
     MatchesComponent,
+    LeagueSelectionComponent,
     TeamSelectionComponent,
     LeagueControlsComponent,
     MatchHistoryComponent,
@@ -39,8 +41,12 @@ export class LeagueSimulationComponent implements OnInit {
   teams$: Observable<Team[]>;
   currentWeek$: Observable<number>;
   currentWeekMatches$: Observable<Match[]>;
+  leagueSelected = false;
   leagueStarted = false;
   totalWeeks = 0;
+
+  selectedLeagueId: string = '';
+  selectedTeams: Team[] = [];
 
   constructor(
     private leagueService: LeagueService,
@@ -55,6 +61,25 @@ export class LeagueSimulationComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  onLeagueSelected(event: { leagueId: string; teams: Team[] }): void {
+    this.selectedLeagueId = event.leagueId;
+    this.selectedTeams = event.teams;
+    this.leagueSelected = true;
+    this.messageService.add({
+      severity: 'success',
+      summary: 'League Selected',
+      detail: `You've selected ${
+        this.selectedTeams.length
+      } teams from ${this.getLeagueName(this.selectedLeagueId)}.`,
+    });
+  }
+
+  backToLeagueSelection(): void {
+    this.leagueSelected = false;
+    this.selectedLeagueId = '';
+    this.selectedTeams = [];
+  }
+
   startLeague(teams: Team[]): void {
     if (teams.length < 2) {
       this.messageService.add({
@@ -62,6 +87,7 @@ export class LeagueSimulationComponent implements OnInit {
         summary: 'Not Enough Teams',
         detail: 'You need at least 2 teams to start a league.',
       });
+
       return;
     }
 
@@ -71,15 +97,18 @@ export class LeagueSimulationComponent implements OnInit {
         summary: 'Too Many Teams',
         detail: 'The maximum number of teams allowed is 20.',
       });
+
       return;
     }
 
     this.leagueService.initializeLeague(teams);
     this.leagueStarted = true;
+    this.totalWeeks = this.leagueService.getTotalWeeks();
+    const leagueName = this.leagueService.getLeagueName(this.selectedLeagueId);
     this.messageService.add({
       severity: 'success',
       summary: 'League Started',
-      detail: `The league has been initialized with ${teams.length} teams.`,
+      detail: `The ${leagueName} has been initialized with ${teams.length} teams.`,
     });
   }
 
@@ -95,7 +124,6 @@ export class LeagueSimulationComponent implements OnInit {
       summary: 'Match Updated',
       detail: `${match.homeTeam.name} ${match.homeGoals} - ${match.awayGoals} ${match.awayTeam.name} has been updated.`,
     });
-
     if (this.leagueService.isLeagueFinished()) {
       this.announceChampion();
     }
@@ -103,23 +131,32 @@ export class LeagueSimulationComponent implements OnInit {
 
   resetLeague(): void {
     this.leagueStarted = false;
+    this.leagueSelected = false;
+    this.selectedLeagueId = '';
+    this.selectedTeams = [];
+
     this.messageService.add({
       severity: 'info',
       summary: 'League Reset',
-      detail: 'The league has been reset. Select teams to start a new league.',
+      detail: 'The league has been reset. Select a new league to start.',
     });
   }
 
   private announceChampion(): void {
     const champion = this.leagueService.getChampion();
-
     if (champion) {
+      const leagueName = this.leagueService.getLeagueName(
+        this.selectedLeagueId
+      );
       this.messageService.add({
         severity: 'success',
         summary: 'Champion Crowned',
-        detail: `${champion.name} is the league champion with ${champion.points} points!`,
+        detail: `${champion.name} is the ${leagueName} champion with ${champion.points} points!`,
         life: 5000,
       });
     }
+  }
+  private getLeagueName(leagueId: string): string {
+    return this.leagueService.getLeagueName(leagueId);
   }
 }

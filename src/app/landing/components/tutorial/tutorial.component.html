@@ -27,6 +27,64 @@
       <p-accordion-header> Getting Started</p-accordion-header>
       <p-accordion-content>
         <h3 class="text-xl font-semibold text-blue-700">
+          Choosing Your League
+        </h3>
+        <p>
+          The simulation starts with league selection, where you can choose from
+          several popular leagues:
+        </p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>
+            <strong>Premier League (England):</strong> Arsenal, Chelsea,
+            Liverpool, Manchester City, etc.
+          </li>
+          <li>
+            <strong>La Liga (Spain):</strong> Barcelona, Real Madrid, Atletico
+            Madrid, etc.
+          </li>
+          <li>
+            <strong>Serie A (Italy):</strong> Inter Milan, AC Milan, Juventus,
+            etc.
+          </li>
+          <li>
+            <strong>Bundesliga (Germany):</strong> Bayern Munich, Borussia
+            Dortmund, RB Leipzig, etc.
+          </li>
+          <li>
+            <strong>Ligue 1 (France):</strong> Paris Saint-Germain, Marseille,
+            Lyon, etc.
+          </li>
+          <li>
+            <strong>Custom League:</strong> Create your own league with custom
+            teams
+          </li>
+        </ul>
+        <p>
+          After selecting a league, you'll be taken to the team customization
+          screen where you can:
+        </p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Modify the names of the predefined teams</li>
+          <li>
+            Adjust team strengths to create more balanced or unbalanced
+            competitions
+          </li>
+          <li>Add or remove teams from the league</li>
+        </ul>
+        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 mb-4">
+          <p class="font-semibold text-blue-800">Pro Tip:</p>
+          <p>
+            For a realistic simulation, keep the predefined team strengths. For
+            a more unpredictable league, try making all teams have similar
+            strength values.
+          </p>
+        </div>
+      </p-accordion-content>
+    </p-accordion-panel>
+    <p-accordion-panel value="1">
+      <p-accordion-header>Selecting Teams</p-accordion-header>
+      <p-accordion-content>
+        <h3 class="text-xl font-semibold text-blue-700">
           Setting Up Your League
         </h3>
         <p>
@@ -49,14 +107,13 @@
             strength will generally perform better than a team with 50 strength.
           </p>
         </div>
-
         <p>
           Once you're happy with your teams, click the "Start League" button to
           begin the simulation.
         </p>
       </p-accordion-content>
     </p-accordion-panel>
-    <p-accordion-panel value="1">
+    <p-accordion-panel value="2">
       <p-accordion-header> Playing the League </p-accordion-header>
       <p-accordion-content>
         <h3 class="text-xl font-semibold text-blue-700">
@@ -117,7 +174,7 @@
         </div>
       </p-accordion-content>
     </p-accordion-panel>
-    <p-accordion-panel value="2">
+    <p-accordion-panel value="3">
       <p-accordion-header> Editing Match Results </p-accordion-header>
       <p-accordion-content>
         <h3 class="text-xl font-semibold text-blue-700">
@@ -150,7 +207,7 @@
         </div>
       </p-accordion-content>
     </p-accordion-panel>
-    <p-accordion-panel>
+    <p-accordion-panel value="4">
       <p-accordion-header> League Rules </p-accordion-header>
       <p-accordion-content>
         <h3 class="text-xl font-semibold text-blue-700">
@@ -180,7 +237,6 @@
             other team twice (home and away)
           </li>
         </ul>
-
         <h4 class="text-lg font-semibold text-blue-600 mt-4">
           Championship Determination
         </h4>

@@ -14,28 +14,28 @@
     <ng-template pTemplate="body" let-match>
       <tr>
         <td
-          colspan="3"
+          style="width: 35%"
           [class.font-bold]="
             match.played && match.homeGoals! > match.awayGoals!
           "
         >
           {{ match.homeTeam.name }}
         </td>
-        <td class="text-center flex-nowrap" colspan="2">
+        <td class="text-center text-nowrap" style="width: 20%">
           <span *ngIf="match.played"
             >{{ match.homeGoals }} - {{ match.awayGoals }}</span
           >
           <span *ngIf="!match.played">vs</span>
         </td>
         <td
-          colspan="3"
+          style="width: 35%"
           [class.font-bold]="
             match.played && match.homeGoals! < match.awayGoals!
           "
         >
           {{ match.awayTeam.name }}
         </td>
-        <td>
+        <td style="width: 10%">
           <p-button
             *ngIf="match.played && match.editable"
             icon="pi pi-pencil"

@@ -1,6 +1,13 @@
+<app-league-selection
+  *ngIf="!leagueSelected && !leagueStarted"
+  (leagueSelected)="onLeagueSelected($event)"
+/>
 <app-team-selection
-  *ngIf="!leagueStarted"
+  *ngIf="leagueSelected && !leagueStarted"
+  [selectedLeagueId]="selectedLeagueId"
+  [initialTeams]="selectedTeams"
   (startLeague)="startLeague($event)"
+  (backToLeagueSelection)="backToLeagueSelection()"
 />
 <div class="space-y-2 w-full" *ngIf="leagueStarted">
   <app-league-controls (resetLeague)="resetLeague()" />

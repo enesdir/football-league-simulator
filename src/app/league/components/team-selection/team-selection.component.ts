@@ -1,4 +1,12 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 import { NgFor } from '@angular/common';
 import { FormsModule, NgModel } from '@angular/forms';
 import { CardModule } from 'primeng/card';
@@ -11,6 +19,11 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { Team } from '@/league/models/team.model';
 import { FloatLabelModule } from 'primeng/floatlabel';
+import {
+  DEFAULT_TEAM_NAMES,
+  DEFAULT_TEAMS,
+} from '@/league/mocks/default-team-names';
+import { LeagueService } from '@/league/services/league.service';
 @Component({
   selector: 'app-team-selection',
   standalone: true,
@@ -29,90 +42,46 @@ import { FloatLabelModule } from 'primeng/floatlabel';
   providers: [ConfirmationService, MessageService],
   templateUrl: './team-selection.component.html',
 })
-export class TeamSelectionComponent implements OnInit {
+export class TeamSelectionComponent implements OnInit, OnChanges {
+  @Input() selectedLeagueId: string = '';
+  @Input() initialTeams: Team[] = [];
   @Output() startLeague = new EventEmitter<Team[]>();
+  @Output() backToLeagueSelection = new EventEmitter<void>();
 
-  teams: Team[] = [
-    {
-      id: 1,
-      name: 'Arsenal',
-      strength: 85,
-      points: 0,
-      played: 0,
-      won: 0,
-      drawn: 0,
-      lost: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      hasChance: true,
-    },
-    {
-      id: 2,
-      name: 'Chelsea',
-      strength: 80,
-      points: 0,
-      played: 0,
-      won: 0,
-      drawn: 0,
-      lost: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      hasChance: true,
-    },
-    {
-      id: 3,
-      name: 'Liverpool',
-      strength: 90,
-      points: 0,
-      played: 0,
-      won: 0,
-      drawn: 0,
-      lost: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      hasChance: true,
-    },
-    {
-      id: 4,
-      name: 'Manchester City',
-      strength: 88,
-      points: 0,
-      played: 0,
-      won: 0,
-      drawn: 0,
-      lost: 0,
-      goalsFor: 0,
-      goalsAgainst: 0,
-      hasChance: true,
-    },
-  ];
+  teams: Team[] = [];
+  leagueName: string = 'Custom';
 
   // Default team names for new teams
-  private defaultTeamNames = [
-    'Manchester United',
-    'Tottenham',
-    'Leicester City',
-    'Everton',
-    'West Ham',
-    'Aston Villa',
-    'Newcastle',
-    'Crystal Palace',
-    'Southampton',
-    'Brighton',
-    'Brentford',
-    'Wolves',
-    'Leeds United',
-    'Burnley',
-    'Watford',
-    'Norwich',
-  ];
+  private defaultTeamNames = DEFAULT_TEAM_NAMES;
 
   constructor(
     private confirmationService: ConfirmationService,
-    private messageService: MessageService
+    private messageService: MessageService,
+    private leagueService: LeagueService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.initializeTeams();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['initialTeams'] || changes['selectedLeagueId']) {
+      this.initializeTeams();
+    }
+  }
+
+  private initializeTeams(): void {
+    if (this.initialTeams && this.initialTeams.length > 0) {
+      // Make a deep copy to avoid modifying the original
+      this.teams = this.initialTeams.map((team) => ({ ...team }));
+      // Get league name from service
+      this.leagueName = this.leagueService.getLeagueName(this.selectedLeagueId);
+    } else {
+      // Default to two teams if no initial teams provided
+      this.teams = DEFAULT_TEAMS.map((team) => ({ ...team }));
+      this.leagueName = 'Custom';
+    }
+  }
 
   addTeam(): void {
     if (this.teams.length >= 20) {
@@ -127,7 +96,6 @@ export class TeamSelectionComponent implements OnInit {
     const nextId = Math.max(...this.teams.map((t) => t.id)) + 1;
     const defaultName = this.getNextDefaultName();
     const randomStrength = Math.floor(Math.random() * 31) + 70; // Random strength between 70-100
-
     this.teams.push({
       id: nextId,
       name: defaultName,
@@ -161,7 +129,6 @@ export class TeamSelectionComponent implements OnInit {
 
     const teamName = this.teams[index].name;
     this.teams.splice(index, 1);
-
     this.messageService.add({
       severity: 'info',
       summary: 'Team Removed',
@@ -182,35 +149,7 @@ export class TeamSelectionComponent implements OnInit {
   }
 
   resetToDefaultTeams(): void {
-    this.teams = [
-      {
-        id: 1,
-        name: 'Arsenal',
-        strength: 85,
-        points: 0,
-        played: 0,
-        won: 0,
-        drawn: 0,
-        lost: 0,
-        goalsFor: 0,
-        goalsAgainst: 0,
-        hasChance: true,
-      },
-      {
-        id: 2,
-        name: 'Chelsea',
-        strength: 80,
-        points: 0,
-        played: 0,
-        won: 0,
-        drawn: 0,
-        lost: 0,
-        goalsFor: 0,
-        goalsAgainst: 0,
-        hasChance: true,
-      },
-    ];
-
+    this.teams = DEFAULT_TEAMS.map((team) => ({ ...team }));
     this.messageService.add({
       severity: 'info',
       summary: 'Teams Reset',
@@ -228,15 +167,15 @@ export class TeamSelectionComponent implements OnInit {
       });
       return;
     }
-
-    // Make a deep copy of the teams to avoid reference issues
     const teamsToEmit = this.teams.map((team) => ({ ...team }));
     this.startLeague.emit(teamsToEmit);
   }
 
+  goBackToLeagueSelection(): void {
+    this.backToLeagueSelection.emit();
+  }
   isValid(): boolean {
     if (this.teams.length < 2) return false;
-
     // Check if all teams have names
     return this.teams.every((team) => team.name.trim() !== '');
   }
@@ -248,7 +187,6 @@ export class TeamSelectionComponent implements OnInit {
         return name;
       }
     }
-
     // If all default names are used, generate a generic name
     return `Team ${this.teams.length + 1}`;
   }
