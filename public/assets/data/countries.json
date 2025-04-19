@@ -1,0 +1,157 @@
+[
+  {
+    "id": "england",
+    "name": "England",
+    "leagueIds": ["premier-league", "championship", "league-one", "league-two"],
+    "cupIds": ["fa-cup", "efl-cup"],
+    "association": "The Football Association",
+    "uefaAssociation": "UEFA",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+  },
+  {
+    "id": "spain",
+    "name": "Spain",
+    "leagueIds": ["la-liga", "segunda-division"],
+    "cupIds": ["copa-del-rey"],
+    "association": "Royal Spanish Football Federation",
+    "uefaAssociation": "UEFA",
+    "flag": "🇪🇸"
+  },
+  {
+    "id": "italy",
+    "name": "Italy",
+    "leagueIds": ["serie-a", "serie-b"],
+    "cupIds": ["coppa-italia"],
+    "association": "Italian Football Federation",
+    "uefaAssociation": "UEFA",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "germany",
+    "name": "Germany",
+    "leagueIds": ["bundesliga", "2-bundesliga"],
+    "cupIds": ["dfb-pokal"],
+    "association": "German Football Association",
+    "uefaAssociation": "UEFA",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "leagueIds": ["ligue-1", "ligue-2"],
+    "cupIds": ["coupe-de-france"],
+    "association": "French Football Federation",
+    "uefaAssociation": "UEFA",
+    "flag": "🇫🇷"
+  },
+  {
+    "id": "turkey",
+    "name": "Turkey",
+    "leagueIds": [
+      "tsl",
+      "tff-first-league",
+      "tff-second-league",
+      "tff-third-league"
+    ],
+    "cupIds": ["turkish-cup"],
+    "association": "Turkish Football Federation",
+    "uefaAssociation": "UEFA",
+    "flag": "🇹🇷"
+  },
+  {
+    "id": "portugal",
+    "name": "Portugal",
+    "leagueIds": ["primeira-liga", "liga-portugal-2"],
+    "cupIds": ["taca-de-portugal", "taca-da-liga"],
+    "association": "Portuguese Football Federation",
+    "uefaAssociation": "UEFA",
+    "flag": "🇵🇹"
+  },
+  {
+    "id": "netherlands",
+    "name": "Netherlands",
+    "leagueIds": ["eredivisie", "eerste-divisie"],
+    "cupIds": ["knvb-beker"],
+    "association": "Royal Dutch Football Association",
+    "uefaAssociation": "UEFA",
+    "flag": "🇳🇱"
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "leagueIds": ["serie-a", "serie-b"],
+    "cupIds": ["copa-do-brasil"],
+    "association": "Brazilian Football Confederation",
+    "uefaAssociation": "CONMEBOL",
+    "flag": "🇧🇷"
+  },
+  {
+    "id": "argentina",
+    "name": "Argentina",
+    "leagueIds": ["primera-division", "primera-b-nacional"],
+    "cupIds": ["copa-argentina"],
+    "association": "Argentine Football Association",
+    "uefaAssociation": "CONMEBOL",
+    "flag": "🇦🇷"
+  },
+  {
+    "id": "usa",
+    "name": "United States",
+    "leagueIds": ["mls", "usl-championship"],
+    "cupIds": ["us-open-cup"],
+    "association": "U.S. Soccer Federation",
+    "uefaAssociation": "CONCACAF",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "mexico",
+    "name": "Mexico",
+    "leagueIds": ["liga-mx", "liga-de-expansion"],
+    "cupIds": ["copa-mx"],
+    "association": "Mexican Football Federation",
+    "uefaAssociation": "CONCACAF",
+    "flag": "🇲🇽"
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "leagueIds": ["j1-league", "j2-league"],
+    "cupIds": ["emperors-cup"],
+    "association": "Japan Football Association",
+    "uefaAssociation": "AFC",
+    "flag": "🇯🇵"
+  },
+  {
+    "id": "russia",
+    "name": "Russia",
+    "leagueIds": ["premier-liga", "fnl"],
+    "cupIds": ["russian-cup"],
+    "association": "Russian Football Union",
+    "uefaAssociation": "UEFA",
+    "flag": "🇷🇺"
+  },
+  {
+    "id": "belgium",
+    "name": "Belgium",
+    "leagueIds": ["pro-league", "challenger-pro-league"],
+    "cupIds": ["belgian-cup"],
+    "association": "Royal Belgian Football Association",
+    "uefaAssociation": "UEFA",
+    "flag": "🇧🇪"
+  },
+  {
+    "id": "scotland",
+    "name": "Scotland",
+    "leagueIds": ["premiership", "championship", "league-one", "league-two"],
+    "cupIds": ["scottish-cup", "scottish-league-cup"],
+    "association": "Scottish Football Association",
+    "uefaAssociation": "UEFA",
+    "flag": "🏴"
+  },
+  {
+    "id": "custom",
+    "name": "Custom",
+    "leagueIds": [],
+    "cupIds": []
+  }
+]

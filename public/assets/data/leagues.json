@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "premier-league",
+    "name": "Premier League",
+    "shortName": "PL",
+    "countryId": "england",
+    "teamIds": [
+      "arsenal",
+      "chelsea",
+      "liverpool",
+      "man-utd",
+      "man-city",
+      "tottenham",
+      "leicester",
+      "west-ham",
+      "everton",
+      "newcastle",
+      "aston-villa",
+      "wolves",
+      "crystal-palace",
+      "brighton",
+      "southampton",
+      "burnley",
+      "leeds",
+      "watford",
+      "norwich",
+      "brentford"
+    ],
+    "logo": "premier-league.png",
+    "subLeagueId": "championship",
+    "parentLeagueId": null,
+    "rules": {
+      "uefaQualifications": [
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [1, 4],
+          "entryStage": "group",
+          "priority": 1
+        },
+        {
+          "type": "uefa",
+          "competition": "UEL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [5, 5],
+          "entryStage": "group",
+          "priority": 2
+        },
+        {
+          "type": "uefa",
+          "competition": "UECL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [6, 6],
+          "entryStage": "group",
+          "priority": 3
+        }
+      ],
+      "localQualifications": [
+        {
+          "type": "local",
+          "competition": "FaCup",
+          "qualificationPath": "winner",
+          "grantsAccessTo": {
+            "competition": "UEL",
+            "priority": 2,
+            "slotTransfer": {
+              "when": "already-qualified",
+              "action": "next-league-position"
+            }
+          }
+        },
+        {
+          "type": "local",
+          "competition": "EflCup",
+          "qualificationPath": "winner",
+          "grantsAccessTo": {
+            "competition": "UECL",
+            "priority": 3,
+            "slotTransfer": {
+              "when": "already-qualified",
+              "action": "next-league-position"
+            }
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [18, 19, 20],
+          "targetLeagueId": "championship"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "championship",
+    "name": "Championship",
+    "shortName": "EFL Championship",
+    "countryId": "england",
+    "teamIds": [
+      "blackburn",
+      "middlesbrough",
+      "qpr",
+      "derby",
+      "preston",
+      "reading",
+      "sheffield-utd",
+      "hull",
+      "bristol-city",
+      "nottingham-forest",
+      "cardiff",
+      "stoke",
+      "millwall",
+      "coventry",
+      "swansea",
+      "birmingham",
+      "blackpool",
+      "barnsley",
+      "peterborough",
+      "luton"
+    ],
+    "logo": "championship.png",
+    "subLeagueId": "league-one",
+    "parentLeagueId": "premier-league",
+    "rules": {
+      "promotions": [
+        {
+          "type": "automatic",
+          "positions": [1, 2],
+          "targetLeagueId": "premier-league"
+        },
+        {
+          "type": "playoff",
+          "positions": [3, 4, 5, 6],
+          "targetLeagueId": "premier-league",
+          "playoffConfig": {
+            "rounds": 2
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [22, 23, 24],
+          "targetLeagueId": "league-one"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "league-one",
+    "name": "League One",
+    "shortName": "L1",
+    "countryId": "england",
+    "teamIds": [
+      "sunderland",
+      "portsmouth",
+      "charlton",
+      "ipswich",
+      "lincoln",
+      "oxford",
+      "plymouth",
+      "wigan",
+      "mk-dons",
+      "shrewsbury",
+      "burton",
+      "accrington",
+      "fleetwood",
+      "cheltenham",
+      "cambridge",
+      "bolton",
+      "doncaster",
+      "crewe",
+      "gillingham",
+      "morecambe"
+    ],
+    "logo": "league-one.png",
+    "subLeagueId": "league-two",
+    "parentLeagueId": "championship",
+    "rules": {
+      "promotions": [
+        {
+          "type": "automatic",
+          "positions": [1, 2, 3],
+          "targetLeagueId": "championship"
+        },
+        {
+          "type": "playoff",
+          "positions": [4, 5, 6, 7],
+          "targetLeagueId": "championship",
+          "playoffConfig": {
+            "rounds": 2
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [21, 22, 23, 24],
+          "targetLeagueId": "league-two"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "league-two",
+    "name": "League Two",
+    "shortName": "L2",
+    "countryId": "england",
+    "teamIds": [
+      "bradford",
+      "exeter",
+      "stevenage",
+      "leyton-orient",
+      "mansfield",
+      "crawley",
+      "northampton",
+      "carlisle",
+      "colchester",
+      "newport",
+      "tranmere",
+      "swindon",
+      "oldham",
+      "walsall",
+      "scunthorpe",
+      "salford",
+      "forest-green",
+      "rochdale",
+      "harrogate",
+      "barrow"
+    ],
+    "logo": "league-two.png",
+    "subLeagueId": null,
+    "parentLeagueId": "league-one",
+    "rules": {
+      "promotions": [
+        {
+          "type": "automatic",
+          "positions": [1, 2, 3],
+          "targetLeagueId": "league-one"
+        },
+        {
+          "type": "playoff",
+          "positions": [4, 5, 6, 7],
+          "targetLeagueId": "league-one",
+          "playoffConfig": {
+            "rounds": 2
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [23, 24],
+          "targetLeagueId": null
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "la-liga",
+    "name": "La Liga",
+    "shortName": "LaLiga",
+    "countryId": "spain",
+    "teamIds": [
+      "real-madrid",
+      "barcelona",
+      "atletico-madrid",
+      "sevilla",
+      "villarreal",
+      "real-sociedad",
+      "betis",
+      "athletic-bilbao",
+      "valencia",
+      "celta-vigo",
+      "osasuna",
+      "espanyol",
+      "elche",
+      "mallorca",
+      "getafe",
+      "alaves",
+      "levante",
+      "cadiz",
+      "granada",
+      "vallecano"
+    ],
+    "logo": "la-liga.png",
+    "subLeagueId": "segunda-division",
+    "parentLeagueId": null,
+    "rules": {
+      "uefaQualifications": [
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [1, 4],
+          "entryStage": "group",
+          "priority": 1
+        },
+        {
+          "type": "uefa",
+          "competition": "UEL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [5, 5],
+          "entryStage": "group",
+          "priority": 2
+        },
+        {
+          "type": "uefa",
+          "competition": "UECL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [6, 6],
+          "entryStage": "group",
+          "priority": 3
+        }
+      ],
+      "localQualifications": [
+        {
+          "type": "local",
+          "competition": "CopaDelRey",
+          "qualificationPath": "winner",
+          "grantsAccessTo": {
+            "competition": "UEL",
+            "priority": 2,
+            "slotTransfer": {
+              "when": "already-qualified",
+              "action": "cup-runner-up"
+            }
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [18, 19, 20],
+          "targetLeagueId": "segunda-division"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "HeadToHead",
+        "GoalDifference",
+        "GoalsFor",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "segunda-division",
+    "name": "Segunda División",
+    "shortName": "LaLiga 2",
+    "countryId": "spain",
+    "teamIds": [
+      "deportivo",
+      "zaragoza",
+      "sporting-gijon",
+      "almeria",
+      "las-palmas",
+      "malaga",
+      "leganes",
+      "cartagena",
+      "tenerife",
+      "huesca",
+      "real-oviedo",
+      "mirandes",
+      "fuenlabrada",
+      "ponferradina",
+      "burgos",
+      "eibar",
+      "alcorcon",
+      "lugo",
+      "amorebieta",
+      "sociedad-b"
+    ],
+    "logo": "segunda.png",
+    "subLeagueId": null,
+    "parentLeagueId": "la-liga",
+    "rules": {
+      "promotions": [
+        {
+          "type": "automatic",
+          "positions": [1, 2],
+          "targetLeagueId": "la-liga"
+        },
+        {
+          "type": "playoff",
+          "positions": [3, 4, 5, 6],
+          "targetLeagueId": "la-liga",
+          "playoffConfig": {
+            "rounds": 2
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [19, 20, 21, 22],
+          "targetLeagueId": null
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "HeadToHead",
+        "GoalDifference",
+        "GoalsFor",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "primeira-liga",
+    "name": "Primeira Liga",
+    "shortName": "Liga Portugal",
+    "countryId": "portugal",
+    "teamIds": [
+      "benfica",
+      "porto",
+      "sporting",
+      "braga",
+      "guimaraes",
+      "boavista",
+      "famalicao",
+      "estoril",
+      "vizela",
+      "rio-ave",
+      "chaves",
+      "portimonense",
+      "casa-pia",
+      "maritimo",
+      "pacos-ferreira",
+      "santa-clara",
+      "gil-vicente",
+      "arouca"
+    ],
+    "logo": "primeira-liga.png",
+    "subLeagueId": "liga-portugal-2",
+    "parentLeagueId": null,
+    "rules": {
+      "uefaQualifications": [
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [1, 2],
+          "entryStage": "group",
+          "priority": 1
+        },
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "qualificationType": "qualifying",
+          "source": "league",
+          "positions": [3, 3],
+          "entryStage": "3rd-qualifying-round",
+          "priority": 2
+        },
+        {
+          "type": "uefa",
+          "competition": "UEL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [4, 4],
+          "entryStage": "group",
+          "priority": 3
+        }
+      ],
+      "localQualifications": [
+        {
+          "type": "local",
+          "competition": "taca-de-portugal",
+          "qualificationPath": "winner",
+          "grantsAccessTo": {
+            "competition": "UEL",
+            "priority": 2,
+            "slotTransfer": {
+              "when": "already-qualified",
+              "action": "next-league-position"
+            }
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [16, 18],
+          "targetLeagueId": "liga-portugal-2"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "HeadToHead",
+        "GoalDifference",
+        "GoalsFor",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "eredivisie",
+    "name": "Eredivisie",
+    "shortName": "Eredivisie",
+    "countryId": "netherlands",
+    "teamIds": [
+      "ajax",
+      "psv",
+      "feyenoord",
+      "az-alkmaar",
+      "twente",
+      "utrecht",
+      "vitesse",
+      "heerenveen",
+      "nec-nijmegen",
+      "groningen",
+      "volendam",
+      "sparta-rotterdam",
+      "go-ahead-eagles",
+      "fortuna-sittard",
+      "cambuur",
+      "excelsior",
+      "waalwijk",
+      "emmen"
+    ],
+    "logo": "eredivisie.png",
+    "subLeagueId": "eerste-divisie",
+    "parentLeagueId": null,
+    "rules": {
+      "uefaQualifications": [
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "qualificationType": "qualifying",
+          "source": "league",
+          "positions": [1, 2],
+          "entryStage": "2nd-qualifying-round",
+          "priority": 1
+        },
+        {
+          "type": "uefa",
+          "competition": "UEL",
+          "qualificationType": "playoff",
+          "source": "league",
+          "positions": [3, 5],
+          "entryStage": "group",
+          "priority": 2
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [16, 16],
+          "targetLeagueId": "eerste-divisie",
+          "playoff": {
+            "withPositions": [16, 17],
+            "against": "eerste-divisie-teams"
+          }
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "serie-a",
+    "name": "Campeonato Brasileiro Série A",
+    "shortName": "Brasileirão",
+    "countryId": "brazil",
+    "teamIds": [
+      "palmeiras",
+      "flamengo",
+      "atletico-mineiro",
+      "corinthians",
+      "fluminense",
+      "sao-paulo",
+      "internacional",
+      "gremio",
+      "santos",
+      "bragantino",
+      "athletico-paranaense",
+      "botafogo",
+      "ceara",
+      "goias",
+      "coritiba",
+      "cuiaba",
+      "america-mg",
+      "avai",
+      "fortaleza",
+      "juventude"
+    ],
+    "logo": "serie-a.png",
+    "subLeagueId": "serie-b",
+    "parentLeagueId": null,
+    "rules": {
+      "continentalQualifications": [
+        {
+          "type": "conmebol",
+          "competition": "Libertadores",
+          "positions": [1, 6],
+          "entryStage": "group",
+          "priority": 1
+        },
+        {
+          "type": "conmebol",
+          "competition": "Sudamericana",
+          "positions": [7, 12],
+          "entryStage": "group",
+          "priority": 2
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [17, 20],
+          "targetLeagueId": "serie-b"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "Wins",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead"
+      ]
+    }
+  },
+  {
+    "id": "bundesliga",
+    "name": "Bundesliga",
+    "shortName": "BL",
+    "countryId": "germany",
+    "teamIds": [
+      "bayern-munich",
+      "borussia-dortmund",
+      "rb-leipzig",
+      "bayer-leverkusen",
+      "eintracht-frankfurt",
+      "wolfsburg",
+      "borussia-monchengladbach",
+      "hoffenheim",
+      "stuttgart",
+      "werder-bremen",
+      "augsburg",
+      "mainz",
+      "hertha-berlin",
+      "union-berlin",
+      "bochum",
+      "koln",
+      "schalke",
+      "greuther-furth"
+    ],
+    "logo": "bundesliga.png",
+    "subLeagueId": "2-bundesliga",
+    "parentLeagueId": null,
+    "rules": {
+      "uefaQualifications": [
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [1, 4],
+          "entryStage": "group",
+          "priority": 1
+        },
+        {
+          "type": "uefa",
+          "competition": "UEL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [5, 5],
+          "entryStage": "group",
+          "priority": 2
+        },
+        {
+          "type": "uefa",
+          "competition": "UECL",
+          "qualificationType": "automatic",
+          "source": "league",
+          "positions": [6, 6],
+          "entryStage": "group",
+          "priority": 3
+        }
+      ],
+      "localQualifications": [
+        {
+          "type": "local",
+          "competition": "dfb-pokal",
+          "qualificationPath": "winner",
+          "grantsAccessTo": {
+            "competition": "UEL",
+            "priority": 2,
+            "slotTransfer": {
+              "when": "already-qualified",
+              "action": "next-league-position"
+            }
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [17, 18],
+          "targetLeagueId": "2-bundesliga"
+        },
+        {
+          "type": "playoff",
+          "positions": [16, 16],
+          "targetLeagueId": "2-bundesliga",
+          "playoff": {
+            "against": "2-bundesliga-3rd"
+          }
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "serie-a",
+    "name": "Serie A",
+    "shortName": "SA",
+    "countryId": "italy",
+    "teamIds": [
+      "juventus",
+      "inter",
+      "milan",
+      "napoli",
+      "roma",
+      "lazio",
+      "atalanta",
+      "fiorentina",
+      "torino",
+      "bologna",
+      "udinese",
+      "sassuolo",
+      "verona",
+      "empoli",
+      "salernitana",
+      "lecce",
+      "spezia",
+      "monza",
+      "cremonese",
+      "sampdoria"
+    ],
+    "logo": "serie-a.png",
+    "subLeagueId": "serie-b",
+    "parentLeagueId": null,
+    "rules": {
+      "uefaQualifications": [
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "positions": [1, 4],
+          "entryStage": "group",
+          "priority": 1
+        },
+        {
+          "type": "uefa",
+          "competition": "UEL",
+          "positions": [5, 5],
+          "entryStage": "group",
+          "priority": 2
+        },
+        {
+          "type": "uefa",
+          "competition": "UECL",
+          "positions": [6, 6],
+          "entryStage": "group",
+          "priority": 3
+        }
+      ],
+      "localQualifications": [
+        {
+          "type": "local",
+          "competition": "coppa-italia",
+          "qualificationPath": "winner",
+          "grantsAccessTo": {
+            "competition": "UEL",
+            "priority": 2,
+            "slotTransfer": {
+              "when": "already-qualified",
+              "action": "next-league-position"
+            }
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [18, 20],
+          "targetLeagueId": "serie-b"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "HeadToHead",
+        "GoalDifference",
+        "GoalsFor",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "ligue-1",
+    "name": "Ligue 1",
+    "shortName": "L1",
+    "countryId": "france",
+    "teamIds": [
+      "psg",
+      "marseille",
+      "lyon",
+      "monaco",
+      "rennes",
+      "lille",
+      "nice",
+      "lens",
+      "nantes",
+      "montpellier",
+      "toulouse",
+      "reims",
+      "lorient",
+      "clermont-foot",
+      "troyes",
+      "auxerre",
+      "ajaccio",
+      "angers"
+    ],
+    "logo": "ligue-1.png",
+    "subLeagueId": "ligue-2",
+    "parentLeagueId": null,
+    "rules": {
+      "uefaQualifications": [
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "positions": [1, 2],
+          "entryStage": "group",
+          "priority": 1
+        },
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "positions": [3, 3],
+          "entryStage": "3rd-qualifying-round",
+          "priority": 2
+        },
+        {
+          "type": "uefa",
+          "competition": "UEL",
+          "positions": [4, 4],
+          "entryStage": "group",
+          "priority": 3
+        }
+      ],
+      "localQualifications": [
+        {
+          "type": "local",
+          "competition": "coupe-de-france",
+          "qualificationPath": "winner",
+          "grantsAccessTo": {
+            "competition": "UEL",
+            "priority": 2,
+            "slotTransfer": {
+              "when": "already-qualified",
+              "action": "next-league-position"
+            }
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [17, 18],
+          "targetLeagueId": "ligue-2"
+        },
+        {
+          "type": "playoff",
+          "positions": [16, 16],
+          "targetLeagueId": "ligue-2",
+          "playoff": {
+            "against": "ligue-2-3rd"
+          }
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "tsl",
+    "name": "Süper Lig",
+    "shortName": "SL",
+    "countryId": "turkey",
+    "teamIds": [
+      "galatasaray",
+      "fenerbahce",
+      "besiktas",
+      "trabzonspor",
+      "basaksehir",
+      "sivasspor",
+      "alanyaspor",
+      "konyaspor",
+      "kayserispor",
+      "adana-demirspor",
+      "kasimpasa",
+      "ankaragucu",
+      "antalyaspor",
+      "giresunspor",
+      "hatayspor",
+      "istanbulspor",
+      "umraniyespor",
+      "gaziantep",
+      "karagumruk",
+      "ankara-keciorengucu"
+    ],
+    "logo": "super-lig.png",
+    "subLeagueId": "first-league",
+    "parentLeagueId": null,
+    "rules": {
+      "uefaQualifications": [
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "positions": [1, 1],
+          "entryStage": "2nd-qualifying-round",
+          "priority": 1
+        },
+        {
+          "type": "uefa",
+          "competition": "UCL",
+          "positions": [2, 2],
+          "entryStage": "2nd-qualifying-round",
+          "priority": 2
+        },
+        {
+          "type": "uefa",
+          "competition": "UECL",
+          "positions": [3, 3],
+          "entryStage": "2nd-qualifying-round",
+          "priority": 3
+        }
+      ],
+      "localQualifications": [
+        {
+          "type": "local",
+          "competition": "turkish-cup",
+          "qualificationPath": "winner",
+          "grantsAccessTo": {
+            "competition": "UECL",
+            "priority": 2,
+            "slotTransfer": {
+              "when": "already-qualified",
+              "action": "next-league-position"
+            }
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [18, 20],
+          "targetLeagueId": "first-league"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "HeadToHead",
+        "GoalDifference",
+        "GoalsFor",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "tff-first-league",
+    "name": "Türkiye 1. Lig",
+    "shortName": "1LIG",
+    "countryId": "turkey",
+    "teamIds": [
+      "ankaragucu",
+      "keciorengucu",
+      "erzurumspor",
+      "manisa",
+      "bandirmaspor"
+    ],
+    "logo": "tff-first-league.png",
+    "subLeagueId": "tff-second-league",
+    "parentLeagueId": "tsl",
+    "rules": {
+      "promotions": [
+        {
+          "type": "automatic",
+          "positions": [1, 2],
+          "targetLeagueId": "tsl"
+        },
+        {
+          "type": "playoff",
+          "positions": [3, 4, 5, 6],
+          "targetLeagueId": "tsl",
+          "playoffConfig": {
+            "rounds": 2
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [22, 23, 24],
+          "targetLeagueId": "tff-second-league"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  },
+  {
+    "id": "tff-second-league",
+    "name": "Türkiye 2. Lig",
+    "shortName": "2LIG",
+    "countryId": "turkey",
+    "teamIds": ["sanliurfaspor", "tuzlaspor", "bayburt", "serik", "igdir"],
+    "logo": "tff-second-league.png",
+    "subLeagueId": "tff-third-league",
+    "parentLeagueId": "tff-first-league",
+    "rules": {
+      "promotions": [
+        {
+          "type": "automatic",
+          "positions": [1, 2],
+          "targetLeagueId": "tff-first-league"
+        },
+        {
+          "type": "playoff",
+          "positions": [3, 4, 5, 6],
+          "targetLeagueId": "tff-first-league",
+          "playoffConfig": {
+            "rounds": 2
+          }
+        }
+      ],
+      "relegations": [
+        {
+          "type": "automatic",
+          "positions": [22, 23, 24],
+          "targetLeagueId": "tff-third-league"
+        }
+      ],
+      "tiebreakerOrder": [
+        "Points",
+        "GoalDifference",
+        "GoalsFor",
+        "HeadToHead",
+        "Alphabetical"
+      ]
+    }
+  }
+]

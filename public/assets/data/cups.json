@@ -1,0 +1,128 @@
+[
+  {
+    "id": "fa-cup",
+    "name": "FA Cup",
+    "type": "knockout",
+    "qualificationRules": [
+      {
+        "type": "local",
+        "competition": "FaCup",
+        "qualificationPath": "winner",
+        "grantsAccessTo": {
+          "competition": "UEL",
+          "priority": 2,
+          "slotTransfer": {
+            "when": "already-qualified",
+            "action": "next-league-position"
+          }
+        }
+      }
+    ],
+    "logo": "fa-cup.png"
+  },
+  {
+    "id": "efl-cup",
+    "name": "EFL Cup",
+    "type": "knockout",
+    "qualificationRules": [
+      {
+        "type": "local",
+        "competition": "EflCup",
+        "qualificationPath": "winner",
+        "grantsAccessTo": {
+          "competition": "UECL",
+          "priority": 3,
+          "slotTransfer": {
+            "when": "already-qualified",
+            "action": "next-league-position"
+          }
+        }
+      }
+    ],
+    "logo": "efl-cup.png"
+  },
+  {
+    "id": "copa-del-rey",
+    "name": "Copa del Rey",
+    "type": "knockout",
+    "qualificationRules": [
+      {
+        "type": "local",
+        "competition": "CopaDelRey",
+        "qualificationPath": "winner",
+        "grantsAccessTo": {
+          "competition": "UEL",
+          "priority": 2,
+          "slotTransfer": {
+            "when": "already-qualified",
+            "action": "cup-runner-up"
+          }
+        }
+      }
+    ],
+    "logo": "copa-del-rey.png"
+  },
+  {
+    "id": "coppa-italia",
+    "name": "Coppa Italia",
+    "type": "knockout",
+    "qualificationRules": [
+      {
+        "type": "local",
+        "competition": "CoppaItalia",
+        "qualificationPath": "winner",
+        "grantsAccessTo": {
+          "competition": "UEL",
+          "priority": 2,
+          "slotTransfer": {
+            "when": "already-qualified",
+            "action": "next-league-position"
+          }
+        }
+      }
+    ],
+    "logo": "coppa-italia.png"
+  },
+  {
+    "id": "dfb-pokal",
+    "name": "DFB-Pokal",
+    "type": "knockout",
+    "qualificationRules": [
+      {
+        "type": "local",
+        "competition": "GenericDomesticCup",
+        "qualificationPath": "winner",
+        "grantsAccessTo": {
+          "competition": "UEL",
+          "priority": 2,
+          "slotTransfer": {
+            "when": "already-qualified",
+            "action": "next-league-position"
+          }
+        }
+      }
+    ],
+    "logo": "dfb-pokal.png"
+  },
+  {
+    "id": "coupe-de-france",
+    "name": "Coupe de France",
+    "type": "knockout",
+    "qualificationRules": [
+      {
+        "type": "local",
+        "competition": "CoupeDeFrance",
+        "qualificationPath": "winner",
+        "grantsAccessTo": {
+          "competition": "UEL",
+          "priority": 2,
+          "slotTransfer": {
+            "when": "already-qualified",
+            "action": "next-league-position"
+          }
+        }
+      }
+    ],
+    "logo": "coupe-de-france.png"
+  }
+]

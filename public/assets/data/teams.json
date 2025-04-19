@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "arsenal",
+    "teamCode": "ARS",
+    "countryId": "england",
+    "name": "Arsenal FC",
+    "strength": 82,
+    "logo": "arsenal.png"
+  },
+  {
+    "id": "chelsea",
+    "teamCode": "CHE",
+    "countryId": "england",
+    "name": "Chelsea FC",
+    "strength": 85,
+    "logo": "chelsea.png"
+  },
+  {
+    "id": "liverpool",
+    "teamCode": "LIV",
+    "countryId": "england",
+    "name": "Liverpool FC",
+    "strength": 86,
+    "logo": "liverpool.png"
+  },
+  {
+    "id": "man-utd",
+    "teamCode": "MUN",
+    "countryId": "england",
+    "name": "Manchester United",
+    "strength": 83,
+    "logo": "manchester-united.png"
+  },
+  {
+    "id": "man-city",
+    "teamCode": "MCI",
+    "countryId": "england",
+    "name": "Manchester City",
+    "strength": 88,
+    "logo": "manchester-city.png"
+  },
+  {
+    "id": "tottenham",
+    "teamCode": "TOT",
+    "countryId": "england",
+    "name": "Tottenham Hotspur",
+    "strength": 80,
+    "logo": "tottenham.png"
+  },
+  {
+    "id": "leicester",
+    "teamCode": "LEI",
+    "countryId": "england",
+    "name": "Leicester City",
+    "strength": 78,
+    "logo": "leicester.png"
+  },
+  {
+    "id": "west-ham",
+    "teamCode": "WHU",
+    "countryId": "england",
+    "name": "West Ham United",
+    "strength": 78,
+    "logo": "west-ham.png"
+  },
+  {
+    "id": "everton",
+    "teamCode": "EVE",
+    "countryId": "england",
+    "name": "Everton FC",
+    "strength": 75,
+    "logo": "everton.png"
+  },
+  {
+    "id": "newcastle",
+    "teamCode": "NEW",
+    "countryId": "england",
+    "name": "Newcastle United",
+    "strength": 76,
+    "logo": "newcastle.png"
+  },
+  {
+    "id": "aston-villa",
+    "teamCode": "AVL",
+    "countryId": "england",
+    "name": "Aston Villa",
+    "strength": 75,
+    "logo": "aston-villa.png"
+  },
+  {
+    "id": "wolves",
+    "teamCode": "WOL",
+    "countryId": "england",
+    "name": "Wolverhampton Wanderers",
+    "strength": 75,
+    "logo": "wolves.png"
+  },
+  {
+    "id": "crystal-palace",
+    "teamCode": "CRY",
+    "countryId": "england",
+    "name": "Crystal Palace",
+    "strength": 73,
+    "logo": "crystal-palace.png"
+  },
+  {
+    "id": "brighton",
+    "teamCode": "BHA",
+    "countryId": "england",
+    "name": "Brighton & Hove Albion",
+    "strength": 73,
+    "logo": "brighton.png"
+  },
+  {
+    "id": "southampton",
+    "teamCode": "SOU",
+    "countryId": "england",
+    "name": "Southampton FC",
+    "strength": 72,
+    "logo": "southampton.png"
+  },
+  {
+    "id": "burnley",
+    "teamCode": "BUR",
+    "countryId": "england",
+    "name": "Burnley FC",
+    "strength": 71,
+    "logo": "burnley.png"
+  },
+  {
+    "id": "leeds",
+    "teamCode": "LEE",
+    "countryId": "england",
+    "name": "Leeds United",
+    "strength": 72,
+    "logo": "leeds.png"
+  },
+  {
+    "id": "watford",
+    "teamCode": "WAT",
+    "countryId": "england",
+    "name": "Watford FC",
+    "strength": 70,
+    "logo": "watford.png"
+  },
+  {
+    "id": "norwich",
+    "teamCode": "NOR",
+    "countryId": "england",
+    "name": "Norwich City",
+    "strength": 68,
+    "logo": "norwich.png"
+  },
+  {
+    "id": "brentford",
+    "teamCode": "BRE",
+    "countryId": "england",
+    "name": "Brentford FC",
+    "strength": 70,
+    "logo": "brentford.png"
+  },
+  {
+    "id": "blackburn",
+    "teamCode": "BLA",
+    "countryId": "england",
+    "name": "Blackburn Rovers",
+    "strength": 65,
+    "logo": "blackburn.png"
+  },
+  {
+    "id": "middlesbrough",
+    "teamCode": "MID",
+    "countryId": "england",
+    "name": "Middlesbrough FC",
+    "strength": 65,
+    "logo": "middlesbrough.png"
+  },
+  {
+    "id": "qpr",
+    "teamCode": "QPR",
+    "countryId": "england",
+    "name": "Queens Park Rangers",
+    "strength": 64,
+    "logo": "qpr.png"
+  },
+  {
+    "id": "derby",
+    "teamCode": "DER",
+    "countryId": "england",
+    "name": "Derby County",
+    "strength": 63,
+    "logo": "derby.png"
+  },
+  {
+    "id": "preston",
+    "teamCode": "PNE",
+    "countryId": "england",
+    "name": "Preston North End",
+    "strength": 62,
+    "logo": "preston.png"
+  },
+  {
+    "id": "reading",
+    "teamCode": "REA",
+    "countryId": "england",
+    "name": "Reading FC",
+    "strength": 62,
+    "logo": "reading.png"
+  },
+  {
+    "id": "sheffield-utd",
+    "teamCode": "SHU",
+    "countryId": "england",
+    "name": "Sheffield United",
+    "strength": 64,
+    "logo": "sheffield-utd.png"
+  },
+  {
+    "id": "hull",
+    "teamCode": "HUL",
+    "countryId": "england",
+    "name": "Hull City",
+    "strength": 61,
+    "logo": "hull.png"
+  },
+  {
+    "id": "bristol-city",
+    "teamCode": "BRS",
+    "countryId": "england",
+    "name": "Bristol City",
+    "strength": 61,
+    "logo": "bristol-city.png"
+  },
+  {
+    "id": "nottingham-forest",
+    "teamCode": "FOR",
+    "countryId": "england",
+    "name": "Nottingham Forest",
+    "strength": 63,
+    "logo": "nottingham-forest.png"
+  },
+  {
+    "id": "cardiff",
+    "teamCode": "CAR",
+    "countryId": "england",
+    "name": "Cardiff City",
+    "strength": 62,
+    "logo": "cardiff.png"
+  },
+  {
+    "id": "stoke",
+    "teamCode": "STK",
+    "countryId": "england",
+    "name": "Stoke City",
+    "strength": 63,
+    "logo": "stoke.png"
+  },
+  {
+    "id": "millwall",
+    "teamCode": "MIL",
+    "countryId": "england",
+    "name": "Millwall FC",
+    "strength": 60,
+    "logo": "millwall.png"
+  },
+  {
+    "id": "coventry",
+    "teamCode": "COV",
+    "countryId": "england",
+    "name": "Coventry City",
+    "strength": 60,
+    "logo": "coventry.png"
+  },
+  {
+    "id": "swansea",
+    "teamCode": "SWA",
+    "countryId": "england",
+    "name": "Swansea City",
+    "strength": 62,
+    "logo": "swansea.png"
+  },
+  {
+    "id": "birmingham",
+    "teamCode": "BIR",
+    "countryId": "england",
+    "name": "Birmingham City",
+    "strength": 59,
+    "logo": "birmingham.png"
+  },
+  {
+    "id": "blackpool",
+    "teamCode": "BLK",
+    "countryId": "england",
+    "name": "Blackpool FC",
+    "strength": 58,
+    "logo": "blackpool.png"
+  },
+  {
+    "id": "luton",
+    "teamCode": "LUT",
+    "countryId": "england",
+    "name": "Luton Town",
+    "strength": 59,
+    "logo": "luton.png"
+  },
+  {
+    "id": "barnsley",
+    "teamCode": "BAR",
+    "countryId": "england",
+    "name": "Barnsley FC",
+    "strength": 57,
+    "logo": "barnsley.png"
+  },
+  {
+    "id": "peterborough",
+    "teamCode": "PET",
+    "countryId": "england",
+    "name": "Peterborough United",
+    "strength": 56,
+    "logo": "peterborough.png"
+  },
+  {
+    "id": "sunderland",
+    "teamCode": "SUN",
+    "countryId": "england",
+    "name": "Sunderland AFC",
+    "strength": 55,
+    "logo": "sunderland.png"
+  },
+  {
+    "id": "portsmouth",
+    "teamCode": "POR",
+    "countryId": "england",
+    "name": "Portsmouth FC",
+    "strength": 54,
+    "logo": "portsmouth.png"
+  },
+  {
+    "id": "charlton",
+    "teamCode": "CHA",
+    "countryId": "england",
+    "name": "Charlton Athletic",
+    "strength": 53,
+    "logo": "charlton.png"
+  },
+  {
+    "id": "ipswich",
+    "teamCode": "IPS",
+    "countryId": "england",
+    "name": "Ipswich Town",
+    "strength": 54,
+    "logo": "ipswich.png"
+  },
+  {
+    "id": "lincoln",
+    "teamCode": "LIN",
+    "countryId": "england",
+    "name": "Lincoln City",
+    "strength": 51,
+    "logo": "lincoln.png"
+  },
+  {
+    "id": "oxford",
+    "teamCode": "OXF",
+    "countryId": "england",
+    "name": "Oxford United",
+    "strength": 52,
+    "logo": "oxford.png"
+  },
+  {
+    "id": "plymouth",
+    "teamCode": "PLY",
+    "countryId": "england",
+    "name": "Plymouth Argyle",
+    "strength": 51,
+    "logo": "plymouth.png"
+  },
+  {
+    "id": "wigan",
+    "teamCode": "WIG",
+    "countryId": "england",
+    "name": "Wigan Athletic",
+    "strength": 52,
+    "logo": "wigan.png"
+  },
+  {
+    "id": "mk-dons",
+    "teamCode": "MKD",
+    "countryId": "england",
+    "name": "MK Dons",
+    "strength": 50,
+    "logo": "mk-dons.png"
+  },
+  {
+    "id": "shrewsbury",
+    "teamCode": "SHR",
+    "countryId": "england",
+    "name": "Shrewsbury Town",
+    "strength": 49,
+    "logo": "shrewsbury.png"
+  },
+  {
+    "id": "burton",
+    "teamCode": "BUR",
+    "countryId": "england",
+    "name": "Burton Albion",
+    "strength": 48,
+    "logo": "burton.png"
+  },
+  {
+    "id": "accrington",
+    "teamCode": "ACC",
+    "countryId": "england",
+    "name": "Accrington Stanley",
+    "strength": 47,
+    "logo": "accrington.png"
+  },
+  {
+    "id": "fleetwood",
+    "teamCode": "FLE",
+    "countryId": "england",
+    "name": "Fleetwood Town",
+    "strength": 47,
+    "logo": "fleetwood.png"
+  },
+  {
+    "id": "cheltenham",
+    "teamCode": "CHE",
+    "countryId": "england",
+    "name": "Cheltenham Town",
+    "strength": 46,
+    "logo": "cheltenham.png"
+  },
+  {
+    "id": "cambridge",
+    "teamCode": "CAM",
+    "countryId": "england",
+    "name": "Cambridge United",
+    "strength": 45,
+    "logo": "cambridge.png"
+  },
+  {
+    "id": "bolton",
+    "teamCode": "BOL",
+    "countryId": "england",
+    "name": "Bolton Wanderers",
+    "strength": 48,
+    "logo": "bolton.png"
+  },
+  {
+    "id": "doncaster",
+    "teamCode": "DON",
+    "countryId": "england",
+    "name": "Doncaster Rovers",
+    "strength": 46,
+    "logo": "doncaster.png"
+  },
+  {
+    "id": "crewe",
+    "teamCode": "CRE",
+    "countryId": "england",
+    "name": "Crewe Alexandra",
+    "strength": 45,
+    "logo": "crewe.png"
+  },
+  {
+    "id": "gillingham",
+    "teamCode": "GIL",
+    "countryId": "england",
+    "name": "Gillingham FC",
+    "strength": 46,
+    "logo": "gillingham.png"
+  },
+  {
+    "id": "morecambe",
+    "teamCode": "MOR",
+    "countryId": "england",
+    "name": "Morecambe FC",
+    "strength": 44,
+    "logo": "morecambe.png"
+  },
+  {
+    "id": "bradford",
+    "teamCode": "BRA",
+    "countryId": "england",
+    "name": "Bradford City",
+    "strength": 43,
+    "logo": "bradford.png"
+  },
+  {
+    "id": "exeter",
+    "teamCode": "EXE",
+    "countryId": "england",
+    "name": "Exeter City",
+    "strength": 42,
+    "logo": "exeter.png"
+  },
+  {
+    "id": "stevenage",
+    "teamCode": "STE",
+    "countryId": "england",
+    "name": "Stevenage FC",
+    "strength": 41,
+    "logo": "stevenage.png"
+  },
+  {
+    "id": "leyton-orient",
+    "teamCode": "LEY",
+    "countryId": "england",
+    "name": "Leyton Orient",
+    "strength": 42,
+    "logo": "leyton-orient.png"
+  },
+  {
+    "id": "mansfield",
+    "teamCode": "MAN",
+    "countryId": "england",
+    "name": "Mansfield Town",
+    "strength": 41,
+    "logo": "mansfield.png"
+  },
+  {
+    "id": "crawley",
+    "teamCode": "CRA",
+    "countryId": "england",
+    "name": "Crawley Town",
+    "strength": 40,
+    "logo": "crawley.png"
+  },
+  {
+    "id": "northampton",
+    "teamCode": "NOR",
+    "countryId": "england",
+    "name": "Northampton Town",
+    "strength": 41,
+    "logo": "northampton.png"
+  },
+  {
+    "id": "carlisle",
+    "teamCode": "CAR",
+    "countryId": "england",
+    "name": "Carlisle United",
+    "strength": 40,
+    "logo": "carlisle.png"
+  },
+  {
+    "id": "colchester",
+    "teamCode": "COL",
+    "countryId": "england",
+    "name": "Colchester United",
+    "strength": 40,
+    "logo": "colchester.png"
+  },
+  {
+    "id": "newport",
+    "teamCode": "NEW",
+    "countryId": "england",
+    "name": "Newport County",
+    "strength": 39,
+    "logo": "newport.png"
+  },
+  {
+    "id": "tranmere",
+    "teamCode": "TRA",
+    "countryId": "england",
+    "name": "Tranmere Rovers",
+    "strength": 40,
+    "logo": "tranmere.png"
+  },
+  {
+    "id": "swindon",
+    "teamCode": "SWI",
+    "countryId": "england",
+    "name": "Swindon Town",
+    "strength": 40,
+    "logo": "swindon.png"
+  },
+  {
+    "id": "oldham",
+    "teamCode": "OLD",
+    "countryId": "england",
+    "name": "Oldham Athletic",
+    "strength": 39,
+    "logo": "oldham.png"
+  },
+  {
+    "id": "walsall",
+    "teamCode": "WAL",
+    "countryId": "england",
+    "name": "Walsall FC",
+    "strength": 38,
+    "logo": "walsall.png"
+  },
+  {
+    "id": "scunthorpe",
+    "teamCode": "SCU",
+    "countryId": "england",
+    "name": "Scunthorpe United",
+    "strength": 38,
+    "logo": "scunthorpe.png"
+  },
+  {
+    "id": "salford",
+    "teamCode": "SAL",
+    "countryId": "england",
+    "name": "Salford City",
+    "strength": 39,
+    "logo": "salford.png"
+  },
+  {
+    "id": "forest-green",
+    "teamCode": "FGR",
+    "countryId": "england",
+    "name": "Forest Green Rovers",
+    "strength": 37,
+    "logo": "forest-green.png"
+  },
+  {
+    "id": "rochdale",
+    "teamCode": "ROC",
+    "countryId": "england",
+    "name": "Rochdale AFC",
+    "strength": 37,
+    "logo": "rochdale.png"
+  },
+  {
+    "id": "harrogate",
+    "teamCode": "HAR",
+    "countryId": "england",
+    "name": "Harrogate Town",
+    "strength": 36,
+    "logo": "harrogate.png"
+  },
+  {
+    "id": "barrow",
+    "teamCode": "BAR",
+    "countryId": "england",
+    "name": "Barrow AFC",
+    "strength": 36,
+    "logo": "barrow.png"
+  },
+  {
+    "id": "real-madrid",
+    "teamCode": "RMA",
+    "countryId": "spain",
+    "name": "Real Madrid CF",
+    "strength": 88,
+    "logo": "real-madrid.png"
+  },
+  {
+    "id": "barcelona",
+    "teamCode": "BAR",
+    "countryId": "spain",
+    "name": "FC Barcelona",
+    "strength": 86,
+    "logo": "barcelona.png"
+  },
+  {
+    "id": "atletico-madrid",
+    "teamCode": "ATM",
+    "countryId": "spain",
+    "name": "Atlético de Madrid",
+    "strength": 85,
+    "logo": "atletico-madrid.png"
+  },
+  {
+    "id": "sevilla",
+    "teamCode": "SEV",
+    "countryId": "spain",
+    "name": "Sevilla FC",
+    "strength": 82,
+    "logo": "sevilla.png"
+  },
+  {
+    "id": "villarreal",
+    "teamCode": "VIL",
+    "countryId": "spain",
+    "name": "Villarreal CF",
+    "strength": 80,
+    "logo": "villarreal.png"
+  },
+  {
+    "id": "real-sociedad",
+    "teamCode": "RSO",
+    "countryId": "spain",
+    "name": "Real Sociedad",
+    "strength": 79,
+    "logo": "real-sociedad.png"
+  },
+  {
+    "id": "betis",
+    "teamCode": "BET",
+    "countryId": "spain",
+    "name": "Real Betis",
+    "strength": 78,
+    "logo": "betis.png"
+  },
+  {
+    "id": "athletic-bilbao",
+    "teamCode": "ATH",
+    "countryId": "spain",
+    "name": "Athletic Club",
+    "strength": 77,
+    "logo": "athletic-bilbao.png"
+  },
+  {
+    "id": "valencia",
+    "teamCode": "VAL",
+    "countryId": "spain",
+    "name": "Valencia CF",
+    "strength": 76,
+    "logo": "valencia.png"
+  },
+  {
+    "id": "celta-vigo",
+    "teamCode": "CEL",
+    "countryId": "spain",
+    "name": "RC Celta de Vigo",
+    "strength": 75,
+    "logo": "celta-vigo.png"
+  },
+  {
+    "id": "osasuna",
+    "teamCode": "OSA",
+    "countryId": "spain",
+    "name": "CA Osasuna",
+    "strength": 74,
+    "logo": "osasuna.png"
+  },
+  {
+    "id": "espanyol",
+    "teamCode": "ESP",
+    "countryId": "spain",
+    "name": "RCD Espanyol",
+    "strength": 73,
+    "logo": "espanyol.png"
+  },
+  {
+    "id": "elche",
+    "teamCode": "ELC",
+    "countryId": "spain",
+    "name": "Elche CF",
+    "strength": 71,
+    "logo": "elche.png"
+  },
+  {
+    "id": "mallorca",
+    "teamCode": "MAL",
+    "countryId": "spain",
+    "name": "RCD Mallorca",
+    "strength": 72,
+    "logo": "mallorca.png"
+  },
+  {
+    "id": "getafe",
+    "teamCode": "GET",
+    "countryId": "spain",
+    "name": "Getafe CF",
+    "strength": 73,
+    "logo": "getafe.png"
+  },
+  {
+    "id": "alaves",
+    "teamCode": "ALA",
+    "countryId": "spain",
+    "name": "Deportivo Alavés",
+    "strength": 71,
+    "logo": "alaves.png"
+  },
+  {
+    "id": "levante",
+    "teamCode": "LEV",
+    "countryId": "spain",
+    "name": "Levante UD",
+    "strength": 70,
+    "logo": "levante.png"
+  },
+  {
+    "id": "cadiz",
+    "teamCode": "CAD",
+    "countryId": "spain",
+    "name": "Cádiz CF",
+    "strength": 69,
+    "logo": "cadiz.png"
+  },
+  {
+    "id": "granada",
+    "teamCode": "GRA",
+    "countryId": "spain",
+    "name": "Granada CF",
+    "strength": 70,
+    "logo": "granada.png"
+  },
+  {
+    "id": "vallecano",
+    "teamCode": "RAY",
+    "countryId": "spain",
+    "name": "Rayo Vallecano",
+    "strength": 69,
+    "logo": "vallecano.png"
+  },
+  {
+    "id": "deportivo",
+    "teamCode": "DEP",
+    "countryId": "spain",
+    "name": "RC Deportivo",
+    "strength": 65,
+    "logo": "deportivo.png"
+  },
+  {
+    "id": "zaragoza",
+    "teamCode": "ZAR",
+    "countryId": "spain",
+    "name": "Real Zaragoza",
+    "strength": 64,
+    "logo": "zaragoza.png"
+  },
+  {
+    "id": "sporting-gijon",
+    "teamCode": "SPG",
+    "countryId": "spain",
+    "name": "Sporting de Gijón",
+    "strength": 63,
+    "logo": "sporting-gijon.png"
+  },
+  {
+    "id": "almeria",
+    "teamCode": "ALM",
+    "countryId": "spain",
+    "name": "UD Almería",
+    "strength": 64,
+    "logo": "almeria.png"
+  },
+  {
+    "id": "las-palmas",
+    "teamCode": "LPA",
+    "countryId": "spain",
+    "name": "UD Las Palmas",
+    "strength": 62,
+    "logo": "las-palmas.png"
+  },
+  {
+    "id": "malaga",
+    "teamCode": "MAL",
+    "countryId": "spain",
+    "name": "Málaga CF",
+    "strength": 63,
+    "logo": "malaga.png"
+  },
+  {
+    "id": "leganes",
+    "teamCode": "LEG",
+    "countryId": "spain",
+    "name": "CD Leganés",
+    "strength": 62,
+    "logo": "leganes.png"
+  },
+  {
+    "id": "cartagena",
+    "teamCode": "CAR",
+    "countryId": "spain",
+    "name": "FC Cartagena",
+    "strength": 61,
+    "logo": "cartagena.png"
+  },
+  {
+    "id": "tenerife",
+    "teamCode": "TEN",
+    "countryId": "spain",
+    "name": "CD Tenerife",
+    "strength": 61,
+    "logo": "tenerife.png"
+  },
+  {
+    "id": "huesca",
+    "teamCode": "HUE",
+    "countryId": "spain",
+    "name": "SD Huesca",
+    "strength": 60,
+    "logo": "huesca.png"
+  },
+  {
+    "id": "real-oviedo",
+    "teamCode": "OVI",
+    "countryId": "spain",
+    "name": "Real Oviedo",
+    "strength": 60,
+    "logo": "real-oviedo.png"
+  },
+  {
+    "id": "mirandes",
+    "teamCode": "MIR",
+    "countryId": "spain",
+    "name": "CD Mirandés",
+    "strength": 59,
+    "logo": "mirandes.png"
+  },
+  {
+    "id": "fuenlabrada",
+    "teamCode": "FUE",
+    "countryId": "spain",
+    "name": "CF Fuenlabrada",
+    "strength": 58,
+    "logo": "fuenlabrada.png"
+  },
+  {
+    "id": "ponferradina",
+    "teamCode": "PON",
+    "countryId": "spain",
+    "name": "SD Ponferradina",
+    "strength": 58,
+    "logo": "ponferradina.png"
+  },
+  {
+    "id": "burgos",
+    "teamCode": "BUR",
+    "countryId": "spain",
+    "name": "Burgos CF",
+    "strength": 57,
+    "logo": "burgos.png"
+  },
+  {
+    "id": "eibar",
+    "teamCode": "EIB",
+    "countryId": "spain",
+    "name": "SD Eibar",
+    "strength": 59,
+    "logo": "eibar.png"
+  },
+  {
+    "id": "alcorcon",
+    "teamCode": "ALC",
+    "countryId": "spain",
+    "name": "AD Alcorcón",
+    "strength": 56,
+    "logo": "alcorcon.png"
+  },
+  {
+    "id": "lugo",
+    "teamCode": "LUG",
+    "countryId": "spain",
+    "name": "CD Lugo",
+    "strength": 56,
+    "logo": "lugo.png"
+  },
+  {
+    "id": "amorebieta",
+    "teamCode": "AMO",
+    "countryId": "spain",
+    "name": "SD Amorebieta",
+    "strength": 55,
+    "logo": "amorebieta.png"
+  },
+  {
+    "id": "sociedad-b",
+    "teamCode": "RSB",
+    "countryId": "spain",
+    "name": "Real Sociedad B",
+    "strength": 57,
+    "logo": "sociedad-b.png"
+  },
+  {
+    "id": "galatasaray",
+    "teamCode": "GAL",
+    "countryId": "turkey",
+    "name": "Galatasaray SK",
+    "strength": 82,
+    "logo": "galatasaray.png"
+  },
+  {
+    "id": "fenerbahce",
+    "teamCode": "FEN",
+    "countryId": "turkey",
+    "name": "Fenerbahçe SK",
+    "strength": 80,
+    "logo": "fenerbahce.png"
+  },
+  {
+    "id": "besiktas",
+    "teamCode": "BES",
+    "countryId": "turkey",
+    "name": "Beşiktaş JK",
+    "strength": 78,
+    "logo": "besiktas.png"
+  },
+  {
+    "id": "trabzonspor",
+    "teamCode": "TRA",
+    "countryId": "turkey",
+    "name": "Trabzonspor",
+    "strength": 75,
+    "logo": "trabzonspor.png"
+  },
+  {
+    "id": "basaksehir",
+    "teamCode": "BAS",
+    "countryId": "turkey",
+    "name": "İstanbul Başakşehir FK",
+    "strength": 74,
+    "logo": "basaksehir.png"
+  },
+  {
+    "id": "sivasspor",
+    "teamCode": "SIV",
+    "countryId": "turkey",
+    "name": "Sivasspor",
+    "strength": 70,
+    "logo": "sivasspor.png"
+  },
+  {
+    "id": "alanyaspor",
+    "teamCode": "ALA",
+    "countryId": "turkey",
+    "name": "Alanyaspor",
+    "strength": 68,
+    "logo": "alanyaspor.png"
+  },
+  {
+    "id": "konyaspor",
+    "teamCode": "KON",
+    "countryId": "turkey",
+    "name": "Konyaspor",
+    "strength": 67,
+    "logo": "konyaspor.png"
+  },
+  {
+    "id": "adana-demirspor",
+    "teamCode": "ADS",
+    "countryId": "turkey",
+    "name": "Adana Demirspor",
+    "strength": 72,
+    "logo": "adana-demirspor.png"
+  },
+  {
+    "id": "kasimpasa",
+    "teamCode": "KAS",
+    "countryId": "turkey",
+    "name": "Kasımpaşa SK",
+    "strength": 65,
+    "logo": "kasimpasa.png"
+  },
+  {
+    "id": "ankaragucu",
+    "teamCode": "ANG",
+    "countryId": "turkey",
+    "name": "MKE Ankaragücü",
+    "strength": 63,
+    "logo": "ankaragucu.png"
+  },
+  {
+    "id": "keciorengucu",
+    "teamCode": "KEC",
+    "countryId": "turkey",
+    "name": "Keçiörengücü",
+    "strength": 60,
+    "logo": "keciorengucu.png"
+  },
+  {
+    "id": "erzurumspor",
+    "teamCode": "ERZ",
+    "countryId": "turkey",
+    "name": "BB Erzurumspor",
+    "strength": 58,
+    "logo": "erzurumspor.png"
+  },
+  {
+    "id": "manisa",
+    "teamCode": "MAN",
+    "countryId": "turkey",
+    "name": "Manisa FK",
+    "strength": 59,
+    "logo": "manisa.png"
+  },
+  {
+    "id": "bandirmaspor",
+    "teamCode": "BAN",
+    "countryId": "turkey",
+    "name": "Bandırmaspor",
+    "strength": 57,
+    "logo": "bandirmaspor.png"
+  },
+  {
+    "id": "sanliurfaspor",
+    "teamCode": "SAN",
+    "countryId": "turkey",
+    "name": "Şanlıurfaspor",
+    "strength": 52,
+    "logo": "sanliurfaspor.png"
+  },
+  {
+    "id": "tuzlaspor",
+    "teamCode": "TUZ",
+    "countryId": "turkey",
+    "name": "Tuzlaspor",
+    "strength": 50,
+    "logo": "tuzlaspor.png"
+  },
+  {
+    "id": "bayburt",
+    "teamCode": "BAY",
+    "countryId": "turkey",
+    "name": "Bayburt Özel İdarespor",
+    "strength": 48,
+    "logo": "bayburt.png"
+  },
+  {
+    "id": "serik",
+    "teamCode": "SER",
+    "countryId": "turkey",
+    "name": "Serik Belediyespor",
+    "strength": 47,
+    "logo": "serik.png"
+  },
+  {
+    "id": "igdir",
+    "teamCode": "IGD",
+    "countryId": "turkey",
+    "name": "Iğdır FK",
+    "strength": 45,
+    "logo": "igdir.png"
+  },
+  {
+    "id": "psg",
+    "teamCode": "PSG",
+    "countryId": "france",
+    "name": "Paris Saint-Germain",
+    "strength": 89,
+    "logo": "psg.png"
+  },
+  {
+    "id": "marseille",
+    "teamCode": "OLM",
+    "countryId": "france",
+    "name": "Olympique Marseille",
+    "strength": 82,
+    "logo": "marseille.png"
+  },
+  {
+    "id": "lyon",
+    "teamCode": "OL",
+    "countryId": "france",
+    "name": "Olympique Lyonnais",
+    "strength": 80,
+    "logo": "lyon.png"
+  },
+  {
+    "id": "monaco",
+    "teamCode": "ASM",
+    "countryId": "france",
+    "name": "AS Monaco",
+    "strength": 83,
+    "logo": "monaco.png"
+  },
+  {
+    "id": "lille",
+    "teamCode": "LOSC",
+    "countryId": "france",
+    "name": "LOSC Lille",
+    "strength": 81,
+    "logo": "lille.png"
+  },
+  {
+    "id": "rennes",
+    "teamCode": "SR",
+    "countryId": "france",
+    "name": "Stade Rennais",
+    "strength": 79,
+    "logo": "rennes.png"
+  },
+  {
+    "id": "nice",
+    "teamCode": "OGCN",
+    "countryId": "france",
+    "name": "OGC Nice",
+    "strength": 78,
+    "logo": "nice.png"
+  },
+  {
+    "id": "lens",
+    "teamCode": "RCL",
+    "countryId": "france",
+    "name": "RC Lens",
+    "strength": 77,
+    "logo": "lens.png"
+  },
+  {
+    "id": "nantes",
+    "teamCode": "FCN",
+    "countryId": "france",
+    "name": "FC Nantes",
+    "strength": 75,
+    "logo": "nantes.png"
+  },
+  {
+    "id": "montpellier",
+    "teamCode": "MHSC",
+    "countryId": "france",
+    "name": "Montpellier HSC",
+    "strength": 73,
+    "logo": "montpellier.png"
+  },
+  {
+    "id": "toulouse",
+    "teamCode": "TFC",
+    "countryId": "france",
+    "name": "Toulouse FC",
+    "strength": 71,
+    "logo": "toulouse.png"
+  },
+  {
+    "id": "reims",
+    "teamCode": "SDR",
+    "countryId": "france",
+    "name": "Stade Reims",
+    "strength": 72,
+    "logo": "reims.png"
+  },
+  {
+    "id": "le-havre",
+    "teamCode": "HAC",
+    "countryId": "france",
+    "name": "Le Havre AC",
+    "strength": 68,
+    "logo": "le-havre.png"
+  },
+  {
+    "id": "metz",
+    "teamCode": "FCM",
+    "countryId": "france",
+    "name": "FC Metz",
+    "strength": 66,
+    "logo": "metz.png"
+  },
+  {
+    "id": "clermont-foot",
+    "teamCode": "CF63",
+    "countryId": "france",
+    "name": "Clermont Foot",
+    "strength": 65,
+    "logo": "clermont.png"
+  },
+  {
+    "id": "lorient",
+    "teamCode": "FCL",
+    "countryId": "france",
+    "name": "FC Lorient",
+    "strength": 70,
+    "logo": "lorient.png"
+  },
+  {
+    "id": "auxerre",
+    "teamCode": "AJA",
+    "countryId": "france",
+    "name": "AJ Auxerre",
+    "strength": 67,
+    "logo": "auxerre.png"
+  },
+  {
+    "id": "troyes",
+    "teamCode": "ESTAC",
+    "countryId": "france",
+    "name": "ESTAC Troyes",
+    "strength": 64,
+    "logo": "troyes.png"
+  },
+  {
+    "id": "ajaccio",
+    "teamCode": "ACA",
+    "countryId": "france",
+    "name": "AC Ajaccio",
+    "strength": 63,
+    "logo": "ajaccio.png"
+  },
+  {
+    "id": "angers",
+    "teamCode": "SCO",
+    "countryId": "france",
+    "name": "Angers SCO",
+    "strength": 62,
+    "logo": "angers.png"
+  },
+  {
+    "id": "saint-etienne",
+    "teamCode": "ASSE",
+    "countryId": "france",
+    "name": "AS Saint-Étienne",
+    "strength": 74,
+    "logo": "saint-etienne.png"
+  },
+  {
+    "id": "bordeaux",
+    "teamCode": "FCGB",
+    "countryId": "france",
+    "name": "FC Girondins Bordeaux",
+    "strength": 73,
+    "logo": "bordeaux.png"
+  },
+  {
+    "id": "paris-fc",
+    "teamCode": "PFC",
+    "countryId": "france",
+    "name": "Paris FC",
+    "strength": 69,
+    "logo": "paris-fc.png"
+  },
+  {
+    "id": "grenoble",
+    "teamCode": "GF38",
+    "countryId": "france",
+    "name": "Grenoble Foot 38",
+    "strength": 65,
+    "logo": "grenoble.png"
+  },
+  {
+    "id": "bayern-munich",
+    "teamCode": "FCB",
+    "countryId": "germany",
+    "name": "FC Bayern Munich",
+    "strength": 92,
+    "logo": "bayern.png"
+  },
+  {
+    "id": "borussia-dortmund",
+    "teamCode": "BVB",
+    "countryId": "germany",
+    "name": "Borussia Dortmund",
+    "strength": 88,
+    "logo": "dortmund.png"
+  },
+  {
+    "id": "rb-leipzig",
+    "teamCode": "RBL",
+    "countryId": "germany",
+    "name": "RB Leipzig",
+    "strength": 85,
+    "logo": "leipzig.png"
+  },
+  {
+    "id": "bayer-leverkusen",
+    "teamCode": "B04",
+    "countryId": "germany",
+    "name": "Bayer Leverkusen",
+    "strength": 84,
+    "logo": "leverkusen.png"
+  },
+  {
+    "id": "eintracht-frankfurt",
+    "teamCode": "SGE",
+    "countryId": "germany",
+    "name": "Eintracht Frankfurt",
+    "strength": 82,
+    "logo": "frankfurt.png"
+  },
+  {
+    "id": "wolfsburg",
+    "teamCode": "WOB",
+    "countryId": "germany",
+    "name": "VfL Wolfsburg",
+    "strength": 80,
+    "logo": "wolfsburg.png"
+  },
+  {
+    "id": "borussia-monchengladbach",
+    "teamCode": "BMG",
+    "countryId": "germany",
+    "name": "Borussia Mönchengladbach",
+    "strength": 79,
+    "logo": "gladbach.png"
+  },
+  {
+    "id": "hoffenheim",
+    "teamCode": "TSG",
+    "countryId": "germany",
+    "name": "TSG Hoffenheim",
+    "strength": 77,
+    "logo": "hoffenheim.png"
+  },
+  {
+    "id": "stuttgart",
+    "teamCode": "VFB",
+    "countryId": "germany",
+    "name": "VfB Stuttgart",
+    "strength": 75,
+    "logo": "stuttgart.png"
+  },
+  {
+    "id": "werder-bremen",
+    "teamCode": "SVW",
+    "countryId": "germany",
+    "name": "SV Werder Bremen",
+    "strength": 73,
+    "logo": "bremen.png"
+  },
+  {
+    "id": "augsburg",
+    "teamCode": "FCA",
+    "countryId": "germany",
+    "name": "FC Augsburg",
+    "strength": 72,
+    "logo": "augsburg.png"
+  },
+  {
+    "id": "mainz",
+    "teamCode": "M05",
+    "countryId": "germany",
+    "name": "1. FSV Mainz 05",
+    "strength": 74,
+    "logo": "mainz.png"
+  },
+  {
+    "id": "hertha-berlin",
+    "teamCode": "BSC",
+    "countryId": "germany",
+    "name": "Hertha BSC",
+    "strength": 71,
+    "logo": "hertha.png"
+  },
+  {
+    "id": "union-berlin",
+    "teamCode": "FCU",
+    "countryId": "germany",
+    "name": "1. FC Union Berlin",
+    "strength": 78,
+    "logo": "union-berlin.png"
+  },
+  {
+    "id": "bochum",
+    "teamCode": "VFL",
+    "countryId": "germany",
+    "name": "VfL Bochum",
+    "strength": 68,
+    "logo": "bochum.png"
+  },
+  {
+    "id": "koln",
+    "teamCode": "KOL",
+    "countryId": "germany",
+    "name": "1. FC Köln",
+    "strength": 73,
+    "logo": "koln.png"
+  },
+  {
+    "id": "schalke",
+    "teamCode": "S04",
+    "countryId": "germany",
+    "name": "FC Schalke 04",
+    "strength": 70,
+    "logo": "schalke.png"
+  },
+  {
+    "id": "greuther-furth",
+    "teamCode": "SGF",
+    "countryId": "germany",
+    "name": "SpVgg Greuther Fürth",
+    "strength": 66,
+    "logo": "furth.png"
+  },
+  {
+    "id": "hamburg",
+    "teamCode": "HSV",
+    "countryId": "germany",
+    "name": "Hamburger SV",
+    "strength": 76,
+    "logo": "hamburg.png"
+  },
+  {
+    "id": "dusseldorf",
+    "teamCode": "F95",
+    "countryId": "germany",
+    "name": "Fortuna Düsseldorf",
+    "strength": 72,
+    "logo": "dusseldorf.png"
+  },
+  {
+    "id": "heidenheim",
+    "teamCode": "FCH",
+    "countryId": "germany",
+    "name": "1. FC Heidenheim",
+    "strength": 69,
+    "logo": "heidenheim.png"
+  },
+  {
+    "id": "nurnberg",
+    "teamCode": "FCN",
+    "countryId": "germany",
+    "name": "1. FC Nürnberg",
+    "strength": 68,
+    "logo": "nurnberg.png"
+  },
+  {
+    "id": "braunschweig",
+    "teamCode": "EBS",
+    "countryId": "germany",
+    "name": "Eintracht Braunschweig",
+    "strength": 65,
+    "logo": "braunschweig.png"
+  },
+  {
+    "id": "juventus",
+    "teamCode": "JUV",
+    "countryId": "italy",
+    "name": "Juventus FC",
+    "strength": 88,
+    "logo": "juventus.png"
+  },
+  {
+    "id": "inter",
+    "teamCode": "INT",
+    "countryId": "italy",
+    "name": "Inter Milan",
+    "strength": 89,
+    "logo": "inter.png"
+  },
+  {
+    "id": "milan",
+    "teamCode": "ACM",
+    "countryId": "italy",
+    "name": "AC Milan",
+    "strength": 87,
+    "logo": "milan.png"
+  },
+  {
+    "id": "napoli",
+    "teamCode": "NAP",
+    "countryId": "italy",
+    "name": "SSC Napoli",
+    "strength": 85,
+    "logo": "napoli.png"
+  },
+  {
+    "id": "roma",
+    "teamCode": "ROM",
+    "countryId": "italy",
+    "name": "AS Roma",
+    "strength": 84,
+    "logo": "roma.png"
+  },
+  {
+    "id": "lazio",
+    "teamCode": "LAZ",
+    "countryId": "italy",
+    "name": "SS Lazio",
+    "strength": 82,
+    "logo": "lazio.png"
+  },
+  {
+    "id": "atalanta",
+    "teamCode": "ATA",
+    "countryId": "italy",
+    "name": "Atalanta BC",
+    "strength": 83,
+    "logo": "atalanta.png"
+  },
+  {
+    "id": "fiorentina",
+    "teamCode": "FIO",
+    "countryId": "italy",
+    "name": "ACF Fiorentina",
+    "strength": 80,
+    "logo": "fiorentina.png"
+  },
+  {
+    "id": "torino",
+    "teamCode": "TOR",
+    "countryId": "italy",
+    "name": "Torino FC",
+    "strength": 77,
+    "logo": "torino.png"
+  },
+  {
+    "id": "bologna",
+    "teamCode": "BOL",
+    "countryId": "italy",
+    "name": "Bologna FC",
+    "strength": 75,
+    "logo": "bologna.png"
+  },
+  {
+    "id": "udinese",
+    "teamCode": "UDI",
+    "countryId": "italy",
+    "name": "Udinese Calcio",
+    "strength": 74,
+    "logo": "udinese.png"
+  },
+  {
+    "id": "sassuolo",
+    "teamCode": "SAS",
+    "countryId": "italy",
+    "name": "US Sassuolo",
+    "strength": 73,
+    "logo": "sassuolo.png"
+  },
+  {
+    "id": "salernitana",
+    "teamCode": "SAL",
+    "countryId": "italy",
+    "name": "US Salernitana",
+    "strength": 70,
+    "logo": "salernitana.png"
+  },
+  {
+    "id": "lecce",
+    "teamCode": "LEC",
+    "countryId": "italy",
+    "name": "US Lecce",
+    "strength": 68,
+    "logo": "lecce.png"
+  },
+  {
+    "id": "spezia",
+    "teamCode": "SPE",
+    "countryId": "italy",
+    "name": "Spezia Calcio",
+    "strength": 67,
+    "logo": "spezia.png"
+  },
+  {
+    "id": "monza",
+    "teamCode": "MON",
+    "countryId": "italy",
+    "name": "AC Monza",
+    "strength": 69,
+    "logo": "monza.png"
+  },
+  {
+    "id": "cremonese",
+    "teamCode": "CRE",
+    "countryId": "italy",
+    "name": "US Cremonese",
+    "strength": 66,
+    "logo": "cremonese.png"
+  },
+  {
+    "id": "sampdoria",
+    "teamCode": "SAM",
+    "countryId": "italy",
+    "name": "UC Sampdoria",
+    "strength": 71,
+    "logo": "sampdoria.png"
+  },
+  {
+    "id": "bari",
+    "teamCode": "BRI",
+    "countryId": "italy",
+    "name": "SSC Bari",
+    "strength": 65,
+    "logo": "bari.png"
+  },
+  {
+    "id": "palermo",
+    "teamCode": "PAL",
+    "countryId": "italy",
+    "name": "Palermo FC",
+    "strength": 63,
+    "logo": "palermo.png"
+  },
+  {
+    "id": "como",
+    "teamCode": "COM",
+    "countryId": "italy",
+    "name": "Como 1907",
+    "strength": 62,
+    "logo": "como.png"
+  },
+  {
+    "id": "venezia",
+    "teamCode": "VEN",
+    "countryId": "italy",
+    "name": "Venezia FC",
+    "strength": 64,
+    "logo": "venezia.png"
+  },
+  {
+    "id": "parma",
+    "teamCode": "PAR",
+    "countryId": "italy",
+    "name": "Parma Calcio",
+    "strength": 70,
+    "logo": "parma.png"
+  }
+]

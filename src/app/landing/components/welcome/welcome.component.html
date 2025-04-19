@@ -28,13 +28,14 @@
               Add up to 20 teams with custom names and strengths to build your
               perfect league.
             </p>
-            <button
-              pButton
+            <p-button
               label="Start Simulation"
               icon="pi pi-play"
-              routerLink="/simulation"
-              class="p-button-sm p-button-outlined"
-            ></button>
+              (click)="startSimulation()"
+              size="small"
+              outlined="true"
+              styleClass="w-full"
+            />
           </div>
         </div>
 
@@ -51,7 +52,6 @@
                 Track Results
               </h2>
             </div>
-
             <p class="text-gray-700 mb-4 flex-grow-1">
               Follow match results, league standings, and championship
               probabilities in real-time.
@@ -93,18 +93,27 @@
           </div>
         </div>
       </div>
-      <p-divider></p-divider>
-      <div class="text-center mt-6">
-        <h2 class="text-2xl font-bold text-blue-800 mb-4">
+      <p-divider />
+      <div class="justify-center gap-4 mb-8 items-center flex flex-col">
+        <h2 class="text-2xl font-bold text-blue-800 mb-4 text-center">
           Ready to get started?
         </h2>
-        <button
-          pButton
-          label="Start Simulation"
-          icon="pi pi-play"
-          routerLink="/simulation"
-          class="p-button-lg"
-        ></button>
+        <div class="flex flex-row gap-4">
+          <p-button
+            label="New Simulation"
+            icon="pi pi-plus"
+            size="large"
+            (click)="startSimulation()"
+          />
+          <p-button
+            label="Continue Simulation"
+            icon="pi pi-play"
+            [disabled]="!(simulationExists$ | async)"
+            size="large"
+            outlined="true"
+            (click)="continueSimulation()"
+          />
+        </div>
       </div>
     </p-card>
   </div>
